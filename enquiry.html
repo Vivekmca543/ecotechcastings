@@ -211,6 +211,15 @@ $('.green-bg-brdr').css({'left':left})
             
           </div>
         </div>
+	  <?php
+      $to = "vivekmca543@gmail.com";
+      $subject = "My subject test";
+      $txt = "Test mail";
+      $headers = "From: ecotech castings" . "\r\n" .
+      "CC: vivekmca543@gmail.com";
+      
+      mail($to,$subject,$txt,$headers);
+      ?>
       </div>
 </div>
 </body>
