@@ -42,9 +42,10 @@ $('.green-bg-brdr').css({'left':left})
 <body>
 <div class="main">
   <div class="white_bg">
-      <header class="mobile-menu">
+      <header class="mobile-menu home-page">
           <div class="head_top_bg position-relative">
               <div class="green-bg-brdr position-absolute"></div>
+            
             <div class="container">
               <div class="col-lg-5 col-md-6 col-sm-4 col-xs-5 hidden-xs">
                   <p>Welcome to ECOTECH CASTINGS INDIA PVT. LTD</p>
@@ -69,7 +70,9 @@ $('.green-bg-brdr').css({'left':left})
                 </div>
               </div>
             </div>
+            
           </div>
+          <div class="ecotech-header-wrap">
           <div class="container">
             <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12">
               <div class="row"> <a href="index.html" class="logo" title="SIRIUS"><img src="images/logo.png" class="img-responsive-ecotech" alt="Ecotech" /></a>
@@ -96,6 +99,7 @@ $('.green-bg-brdr').css({'left':left})
               </div>
             </div>
           </div>
+          </div>
         </header> 
  </div>
  
@@ -105,62 +109,18 @@ $('.green-bg-brdr').css({'left':left})
     <ul class="fade_slider">
         <li class="slide6">
             <div>
-              <img src="images/slide6.jpg" class="slide-img"/>
+              <img src="images/ecotechSlide1.jpg" class="slide-img"/>
               <div class="banner_txt">                
                 <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
             </div>
           </li>
-      <li class="slide1">
-        <div>
-          <img src="images/slide1.jpg" class="slide-img"/>
-          <div class="banner_txt">
-            <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>
-          </div>
-        </div>
-      </li>
-      
-      <li class="slide3">
-        <div>
-          <img src="images/slide3.jpg" class="slide-img"/>
-          <div class="banner_txt">
-            <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
-        </div>
-      </li>
-      <li class="slide4">
-        <div>
-          <img src="images/slide4.jpg" class="slide-img"/>
-          <div class="banner_txt">
-            <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
-        </div>
-      </li>
-      <li class="slide2">
-          <div>
-            <img src="images/slide2.jpg" class="slide-img"/>
-            <div class="banner_txt">
-              <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
-          </div>
-        </li>
-      <li class="slide5">
-        <div>
-          <img src="images/slide5.jpg" class="slide-img"/>
-          <div class="banner_txt">
-            <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
-        </div>
-      </li>
-      <li class="slide8">
-          <div>
-            <img src="images/slide8.jpg" class="slide-img"/>
-            <div class="banner_txt">
-              <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
-          </div>
-        </li>
-      <li class="slide7">
-        <div>
-          <img src="images/slide7.jpg" class="slide-img"/>
-          <div class="banner_txt">
-            <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
-        </div>
-      </li>
+          <li class="slide6">
+            <div>
+              <img src="images/ecotechSlide2.jpg" class="slide-img"/>
+              <div class="banner_txt">                
+                <div class="large_txt">COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</div>          </div>
+            </div>
+          </li>
      
     </ul>
   </div>
@@ -212,13 +172,12 @@ $('.green-bg-brdr').css({'left':left})
       <div class="green-bg-brdr position-absolute"></div>
     <div class="container">
       <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <h3>For all types of machining enquiries</h3>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <div class="btn-sub-prt"><a href="enquiry.html" class="btn-sub">Contact Us</a></div>
       </div>
     </div>
   </div>
+
  <div class="footer">
       <div class="container">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -268,12 +227,65 @@ $('.green-bg-brdr').css({'left':left})
     </div>
 </div>
 
+<div class="enquiry-btn ecotech-popup-enquiry"><button type="button" class="btn btn-primary">Enquiry for more details</button></div>
+<div id="ecotech-enquiry">
+  <span id="ecotech-closeenquiry" class="ecotech-close">×</span>
+<div class="inner-content-bg">
+  <div class="float-left w-100">
+    <div class="col-lg-12">
+      <h1>Enquire Us</h1>
+          <div class="uline"></div>
+          
+          <div class="row">
+          
+<div class="col-lg-12 col-xs-12 text-left">
+          <p>Please fill the mandatory fields.</p>
+          <form class="pad" id="ecotechenquiryForm" name="contactForm">
+    <table class="enquiry_form">
+      <tbody><tr>
+        <td class="left_section">Name <span class="red">*</span></td>
+        <td><input required="required" id="name" name="name" type="text" class="text_box" value=""></td>
+      </tr>
+      <tr>
+        <td class="left_section">Email <span class="red">*</span></td>
+        <td><input required="required" id="email" name="email" type="email" class="text_box" value=""></td>
+      </tr>
+      <tr>
+        <td class="left_section">Phone <span class="red">*</span></td>
+        <td><input required="required" id="phone" name="phone" type="number" class="text_box" value=""></td>
+      </tr>
+      <tr>
+        <td class="left_section">Comments</td>
+        <td><textarea required="required" id="message" name="message" rows="5" class="comments_box"></textarea></td>
+      </tr>
+      
+      <tr>
+        <td class="left_section"></td>
+        <td><button type="submit" class="submit_enquiry">Submit</button></td>
+      </tr>
+      <tr>
+        <td class="result-parent"><div id="result"></div>
+        </td>
+      </tr>
+    </tbody></table>
+  </form>
+          
+</div>
+<div class="clearfix"></div>
+          </div>
+         
+       </div>  
+  </div>
+</div>
+</div>
+<div id="ecotech-enquiry-overlay"></div>
+
 <script type="text/javascript">
 
 jQuery('.fade_slider').slick({
   dots: true,
   infinite: true,
-  arrows: true,
+  arrows: false,
   draggable: false,
   speed: 500,
   fade: true,
@@ -290,7 +302,12 @@ jQuery('.fade_slider').slick({
    }
   ]
 });
-<!--banner bootstrap slider-->
+$('.ecotech-popup-enquiry').on('click', function() {
+        $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeIn();
+    });
+    $('#ecotech-closeenquiry').on('click', function() {
+      $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeOut();
+    });
 </script>
 
 </body>
