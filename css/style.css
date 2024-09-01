@@ -787,6 +787,7 @@ box-shadow: -1px 3px 18px -3px rgba(0,0,0,0.75);
 @media screen and (max-width: 767px)
 {
 	#ecotech-enquiry{width:90%;left:5%;}
+	.enquiry_form .comments_box{height:75px;}
 	header .navbar{margin-top:0px !important;}
 	.head_top_bg{height:20px;}
 	.head_top_bg .green-bg-brdr,.eco_enqry .green-bg-brdr{left:80% !important;}
