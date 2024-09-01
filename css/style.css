@@ -17,7 +17,7 @@
 #ecotech-enquiry{
 	display: none;
     position: fixed;
-    z-index: 100000;
+    z-index: 10000000;
     overflow: hidden;
     left: 17.5%;
     top: 6%;
@@ -429,7 +429,7 @@ a.mail:hover {color:#dd2a1b;}
 .contact_mail_enquiry { background-image:url(../images/contact_mail_icon.png); background-repeat:no-repeat; background-position:left 0px; padding-left:45px; margin-top:20px; }
 .contact_mail_enquiry a { display:block; color:#fff; line-height:18px; margin-bottom:8px; } 
 .contact_mail_enquiry a:hover { text-decoration:none; color:#ED1C24; }
-.pad {padding:25px 0;}
+.pad {padding:5px 0;}
 .enquiry_form { width:95%; font-size:14px;  }
 .enquiry_form tr td span { font-size:14px; color:#e6192a;  }
 .enquiry_form tr td { padding-bottom:10px; }
@@ -644,10 +644,10 @@ select option[val="2"]{
     right: 10px;
 }
 .w-100{width:100%;}
-.inner-content-bg{ background:#fff; width:100%; padding:30px;float:left;  }
-.inner-content-bg h1{  font-weight:500; color:#333; font-size:32px;}
+.inner-content-bg{ background:#fff; width:100%; padding:30px 30px 10px 30px;float:left;  }
+.inner-content-bg h1{  font-weight:500; color:#333; font-size:26px;margin:0px;}
 .inner-content-bg h1 span{ color:#fff;}
-.inner-content-bg .uline{ width:8.5%; height:2px; background:#8ac827; margin:10px 0 25px 0;}
+.inner-content-bg .uline{ width:8.5%; height:2px; background:#8ac827; margin:10px 0 5px 0;}
 .inner-content-bg p{text-align:justify;font-weight:400; color:#333; font-size:16px; line-height:30px!important; margin:12px 0;}
 .inner-content-bg h3{  color:#333; font-weight:400; font-size:17px; line-height:30px!important;}
 .inner-content-bg h4{  color:#666; font-size:17px;}
