@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
 
 /* Style for the popup container */
-.ecotech-popup {
+.ecotech-popup{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 10000000; /* Sit on top */
@@ -13,7 +13,27 @@
     background-color: rgba(0,0,0,0.7); /* Black background with opacity */
 	transition: display 2s;
 }
-.ecotech-popup-trigger{cursor:pointer}
+.float-left{float:left}
+#ecotech-enquiry{
+	display: none;
+    position: fixed;
+    z-index: 100000;
+    overflow: hidden;
+    left: 17.5%;
+    top: 6%;
+    width: 65%;
+    height: auto !important;}
+#ecotech-enquiry-overlay{ background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+	display: none; /* Hidden by default */
+    position: fixed;
+	z-index: 99999;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+}
+.enquiry-btn button,.enquiry-btn button:hover{background:#281370;border:1px solid #281370;}
+.ecotech-popup-trigger,.ecotech-popup-enquiry{cursor:pointer}
 /* Popup content */
 .ecotech-popup-content {
 	background-color: #fefefe;
@@ -27,13 +47,21 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+.popup-dimensions h3{text-align:center;border-bottom:1px solid #b3b3b3;padding:5px;margin-bottom:0px;margin-bottom: 0px;
+    font-weight: bold !important;margin-top: 4px;}
+.popup-dimensions ul{ margin: 0px auto;cursor: pointer;}
+	.popup-dimensions li{border-bottom:1px solid #b3b3b3;padding:5px;display: flex;justify-content: space-between;}
+.popup-dimensions li span:nth-of-type(1){width:155px;float:left;margin-right:10px;}
 /* Close button */
 .ecotech-close {
-    color: #aaa;
+	color: #333333;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 20px;
+    position: relative;
+    top: -10px;
+    right: -10px;
 }
 
 .ecotech-close:hover,
@@ -46,7 +74,6 @@
 #ecotech-popupImage {
     width: 100%; /* Adjust as needed */
 }
-
 
 
 a img {
@@ -130,7 +157,7 @@ ol li {
 	text-indent: -1.5em;
 }
 .banner_txt{position: absolute;
-    top: 100px;
+    top: 150px;
     left: 10px;
     padding: 5%;
     width: 50%;}
@@ -147,6 +174,7 @@ header {
 -moz-box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 }
+#result .error{position: absolute;left: 0px;}
 .quick_eco_lnks_bg img{width:100%;}
 .img-responsive-ecotech{
 	width:110px;float:left
@@ -207,7 +235,6 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 
 
 .scroller { padding:10px 15px; background:#FFFFFF;   }
-.header_top { }
 
 .logo { display:inline-block; margin:10px 0px;}
 
@@ -415,12 +442,18 @@ a.mail:hover {color:#dd2a1b;}
 .enquiry_form .submit_enquiry { color:#333; border:2px #333 solid; padding:8px 35px; background-color:transparent; font-size:14px; font-weight:600; text-transform:uppercase;  cursor:pointer; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s; }
 .enquiry_form .submit_enquiry:hover, .enquiry_form .submit_enquiry:focus { border:2px #333 solid; background-color:#333; color:#fff; }
 .home_content_bg{ background:#eeecec;position:relative;}
-.quick_lnks {position: relative;top: -75px;background: transparent;padding: 25px 0;margin: auto;width: 90%;margin-bottom:-75px;}
+.quick_lnks {position: relative;top: 30px;background: transparent;padding: 25px 0;margin: auto;width: 90%;margin-bottom:35px;}
 .quick_eco_lnks_bg {background:#fff; -webkit-box-shadow: -1px 7px 20px -10px rgba(181,179,181,1);
 -moz-box-shadow: -1px 7px 20px -10px rgba(181,179,181,1);height:420px;width:390px;
 box-shadow: -1px 7px 20px -10px rgba(181,179,181,1); -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .quick_eco_lnks_bg:hover {background:#281370; }
-
+header.home-page.fixed .ecotech-header-wrap{background:rgba(0, 0, 0, 0.2);}
+header.home-page.fixed .navbar-default .navbar-nav > .active > a,header.home-page.fixed  .navbar-default .navbar-nav > .active > a:hover,header.home-page.fixed .navbar-default .navbar-nav > .active > a:focus,header.home-page.fixed .navbar-nav > li > a{color:#ffffff !important;}
+header.home-page.fixed{background:none;}
+.product-heads {text-align: center;font-weight: bold;padding-top:8px;}
+.view-more{text-align:center;}
+.prod_cont_inner:hover img,.prod_cont_inner:hover .view-more{transform: scale(1.06);}
+.prod_cont_inner img,.prod_cont_inner .view-more{transition: all 0.5s;}
 .quick_eco_lnks_bg:hover h1,.quick_eco_lnks_bg:hover h2{color:#ffffff;}
 /* .quick_eco_lnks_bg img{width:384px;}  */
 .quick_lnks_cont {padding:10px;}
@@ -514,8 +547,13 @@ select option[val="2"]{
 .careers_form { width:100%;}
 .position-relative{position:relative;}
 .position-absolute{position:absolute}
+.enquiry-btn{top: 60%;
+    right: -69px;
+    position: fixed;
+    z-index: 1000;
+    transform: rotate(90deg);}
 .contact-num{float:left;}
-.eco_enqry {overflow:hidden;width:100%; background:#281370; padding:20px 10px; }
+.eco_enqry {overflow:hidden;width:100%; background:#281370; padding:10px; }
 .eco_enqry h3 {font-size:26px;font-weight:400;margin:0px! important;color:#ffffff;}
 .btn-sub {width:100%;background-color:transparent; border:2px #000 solid;  color:#000; font-size:15px; font-weight:600; text-transform:uppercase; letter-spacing:1px; padding:9px 25px; text-transform:uppercase; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .btn-sub:hover { text-decoration:none; background-color:#000;  border:2px #000 solid;  color:#fff; }
@@ -601,9 +639,12 @@ select option[val="2"]{
 	text-transform: none;
 	margin: 0px;}
 
-
-
-.inner-content-bg{ background:#fff; width:100%; padding:45px 35px;  }
+#ecotech-closeenquiry{position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.w-100{width:100%;}
+.inner-content-bg{ background:#fff; width:100%; padding:30px;float:left;  }
 .inner-content-bg h1{  font-weight:500; color:#333; font-size:32px;}
 .inner-content-bg h1 span{ color:#fff;}
 .inner-content-bg .uline{ width:8.5%; height:2px; background:#8ac827; margin:10px 0 25px 0;}
@@ -745,6 +786,7 @@ box-shadow: -1px 3px 18px -3px rgba(0,0,0,0.75);
 }
 @media screen and (max-width: 767px)
 {
+	#ecotech-enquiry{width:90%;left:5%;}
 	header .navbar{margin-top:0px !important;}
 	.head_top_bg{height:20px;}
 	.head_top_bg .green-bg-brdr,.eco_enqry .green-bg-brdr{left:80% !important;}
