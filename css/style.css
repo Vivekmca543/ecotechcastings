@@ -164,7 +164,7 @@ ol li {
 header {
   padding: 0px 0px;
   background: #fff;
-  width: 100%; z-index:9999999;
+  width: 100%; z-index:9999;
   -webkit-transition: all 0.5s ease;
   -moz-transition: position 10s;
   -ms-transition: position 10s;
