@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+@font-face {
+	font-family: verdana;
+	src: url(./../fonts/verdana.tff);
+  }
 
 /* Style for the popup container */
 .ecotech-popup{
@@ -56,7 +60,7 @@
 .ecotech-close {
 	color: #333333;
     float: right;
-    font-size: 36px;
+    font-size: 1.625em;
     font-weight: normal;
     line-height: 20px;
     position: relative;
@@ -84,8 +88,8 @@ a:hover {text-decoration:none;}
 body {
 	margin: 0px;
 	padding:0px;
-	font-family: 'Roboto', sans-serif;
-	font-size:15px;
+	font-family: verdana;
+	font-size:1em;
 	font-weight:400;
 	background-color:#fff;
 }
@@ -95,7 +99,7 @@ body {
     width: 100%;
     top: 0px;
 }
-.quality-policies li span{font-size: 33px;
+.quality-policies li span{font-size: 2.063em;
 	float: left;
 	padding-right: 10px;}
 /* Selection colours */
@@ -119,7 +123,7 @@ p {
 	padding:0px;
 	margin:0px;
 	color:#333333;
-	font-size:15px;
+	font-size:1em;
 }
 li {
 	padding:0px;
@@ -127,15 +131,15 @@ li {
 	list-style:none;
 }
 h1 {
-	font-size:30px;
+	font-size:1.875em;
 	font-weight:600;
 }
 h2 {
-	font-size:28px;
+	font-size:1.75em;
 	margin-bottom:10px;
 }
 h3 {
-	font-size:23px;
+	font-size:1.438em;
 	margin-bottom:10px;
 }
 h4 {
@@ -157,10 +161,14 @@ ol li {
 	text-indent: -1.5em;
 }
 .banner_txt{position: absolute;
-    top: 150px;
-    left: 10px;
-    padding: 5%;
-    width: 50%;}
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 header {
   padding: 0px 0px;
   background: #fff;
@@ -177,7 +185,7 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 #result .error{position: absolute;left: 0px;}
 .quick_eco_lnks_bg img{width:100%;}
 .img-responsive-ecotech{
-	width:110px;float:left
+	width:99px;float:left
 }
 
 .img-responsive-puma{
@@ -274,7 +282,12 @@ header .navbar-nav li a .caret { margin-top:-3px; border-width: 4px 4px 0 4px;}
 
 .banner_bg .slick-prev:hover, .banner_bg .slick-next:hover { background-position:bottom; }
 .banner_bg h3 { color:#fff; font-size:25px; font-weight:400; }
-.banner_bg .large_txt { color:#ffffff; font-size:40px; line-height:50px; font-weight:600; line-height:50px;}
+.banner_bg .large_txt {color: #ffffff;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 49px;
+    text-align: center;
+    width: 51%;}
 .banner_txt .read_more_link { display:inline-block; padding:8px 20px; border:2px solid #fff; color:#fff; font-size:18px;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;   }
 .banner_txt .read_more_link:hover { text-decoration:none; border-color:#ED1C24; background-color:#ED1C24; color:#fff;  }
 
@@ -304,7 +317,7 @@ a.mail:hover {color:#dd2a1b;}
 
 .group h3 {font-size:18px; line-height:35px; font-weight:400; color:#212121; text-transform:uppercase; margin:10px 0; text-align:center !important;}
 .group h3 span {color:#dd2a1b;}
-.group .btn1{font-family:Arial, Helvetica, sans-serif !important; color:#212121; font-size:14px; font-weight:500; text-transform:none; text-decoration:none;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
+.group .btn1{font-family: verdana !important; color:#212121; font-size:14px; font-weight:500; text-transform:none; text-decoration:none;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .group .btn1:hover {color:#dd2a1b;}
 
 
@@ -558,15 +571,15 @@ select option[val="2"]{
 .btn-sub {width:100%;background-color:transparent; border:2px #000 solid;  color:#000; font-size:15px; font-weight:600; text-transform:uppercase; letter-spacing:1px; padding:9px 25px; text-transform:uppercase; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .btn-sub:hover { text-decoration:none; background-color:#000;  border:2px #000 solid;  color:#fff; }
 .btn-sub-prt{float:right;margin-right:20px;margin-top:3px;}
-.footer{padding:35px 25px; background: #1a1a1a;}
+.footer{padding:15px 25px; background: #1a1a1a;}
 .footer h5 { font-size:24px !important; line-height:26px; font-weight:400; color:#fff;}
-.footer .uline {width:10%; background:#8ac827!important; height:1px; margin:5px 0 35px 0;}
+.footer .uline {width:10%; background:#8ac827!important; height:1px; margin:5px 0px 8px;}
 .footer img {margin-bottom:35px;}
 .footer a {font-weight:400;color: #efefef; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .footer a:hover {color: #f5c400; text-decoration:none;}
-.footer p {font-size:16px; color:#efefef; font-weight:400; line-height:35px; margin:10px 0;}
+.footer p {font-size:16px; color:#efefef; font-weight:400; line-height:35px;}
 .footer ul { margin:0px; padding:0px; list-style:none;}
-.footer li { margin:0px; padding:0px; list-style:none; font-size:16px; color:#838181; font-weight:400; line-height:42px; text-transform:none;}
+.footer li { margin:0px; padding:0px; list-style:none; font-size:16px; color:#838181; font-weight:400; line-height:35px; text-transform:none;}
 .footer li a {color:#efefef; font-weight:400; text-decoration:none;-webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .footer li a:hover {color: #f5c400;}
 
@@ -600,7 +613,13 @@ select option[val="2"]{
 
 .copyright span a {color:#adadad; text-decoration:none;-webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .copyright span a:hover {color:#fff;}
-
+.View-more-ecotech{    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;}
 .logo_slider
 {
 	padding: 0px 30px;
