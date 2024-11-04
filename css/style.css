@@ -1223,7 +1223,7 @@ h1 { font-size:28px; }
 .footer img {margin-bottom:15px; max-width:70%;}
 .footer h5 {margin-top:20px;}
 .footer a{text-align:center !important; }
-.ftr_right{text-align:left !important; }
+.ftr_right,.footer li a{text-align:left !important; }
 a.ftr{text-align:left !important; }
 .cont-icon-inner {padding:20px 0px !important;}
 .cont-icon-inner h1 {font-size:18px; font-weight:600;}
