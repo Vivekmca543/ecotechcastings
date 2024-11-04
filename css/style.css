@@ -591,7 +591,7 @@ select option[val="2"]{
 .footer a:hover {color: #f5c400; text-decoration:none;}
 .footer p {font-size:16px; color:#efefef; font-weight:400; line-height:35px;}
 .footer ul { margin:0px; padding:0px; list-style:none;}
-.footer li { margin:0px; padding:0px; list-style:none; font-size:16px; color:#838181; font-weight:400; line-height:35px; text-transform:none;text-align:left}
+.footer li { margin:0px; padding:0px; list-style:none; font-size:16px; color:#838181; font-weight:400; line-height:35px; text-transform:none;text-align:left !important}
 .footer li a {color:#efefef; font-weight:400; text-decoration:none;-webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .footer li a:hover {color: #f5c400;}
 
