@@ -251,9 +251,14 @@ document.addEventListener('click', function(event) {
           $('#ecotech-popup').fadeOut();
   }
 });
-      $('').on('click', function() {
-          $('#ecotech-popup').fadeOut();
-      });
+      // $('').on('click', function() {
+      //     $('#ecotech-popup').fadeOut();
+      // });
+       $('.nav.navbar-nav').on('click', function() {
+           if($('.navbar-collapse.collapse').hasClass('in')){
+            $('.navbar-collapse.collapse').removeClass('in');
+           }
+       });
       $(window).on('click', function(event) {
           if ($(event.target).is('#ecotech-popup')) {
               $('#ecotech-popup').fadeOut();
