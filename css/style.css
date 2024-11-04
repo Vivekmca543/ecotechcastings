@@ -5,7 +5,18 @@
   }
 
 /* Style for the popup container */
-.ecotech-popup{
+body{min-height:740px}
+.view-more-btn{width:86px;text-align: center;margin: 20px auto;font-size: 12px;font-weight: bold;cursor: pointer;display:flex;flex-direction: column;}
+.view-more-btn span:nth-of-type(2){    height: 1px;
+  top: -7px;
+  position: relative;
+  width: 87%;
+  left: 6px;}
+  .contact-num,#greenbg-id{float:left}
+  #greenbg-id{padding-left:10px;}
+  #greenbg-id span:nth-of-type(1){padding-left:0px;}
+  .view-more-btn a{display:flex;}
+  .ecotech-popup{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 10000000; /* Sit on top */
@@ -17,6 +28,19 @@
     background-color: rgba(0,0,0,0.7); /* Black background with opacity */
 	transition: display 2s;
 }
+.view-more-btn {
+  width: 86px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  
+} 
+
+
 .float-left{float:left}
 #ecotech-enquiry{
 	display: none;
@@ -60,7 +84,7 @@
 .ecotech-close {
 	color: #333333;
     float: right;
-    font-size: 1.625em;
+    font-size: 20px;
     font-weight: normal;
     line-height: 20px;
     position: relative;
@@ -209,8 +233,9 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 .navbar-default {background:transparent !important}
 .head_top_bg{background:#281370; width:100%; display:block;overflow:hidden;}
 .head_top_bg p { color:#fff; font-size:14px;}
-.head_top_bg p,.ph-mail a{padding:10px 0px;float:left}
-.ph-mail a{padding:10px;}
+.head_top_bg p,.ph-mail a,#greenbg-id span{padding:10px 0px;float:left}
+#greenbg-id span{font-size: 1.33333333em;}
+.ph-mail a,#greenbg-id span{padding:10px;}
 .head_top_bg a {color:#fff; font-size:14px; text-decoration:none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .head_top_bg a:hover {color:#fff;}
 
@@ -223,12 +248,10 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 .socialmedia li a:hover {background:#d25a17;  color:#fff !important;}
 
 .ph-mail { color:#fff;}
-.ph-mail a{ color:#fff; font-weight:400; text-decoration:none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s; }
-
+.ph-mail a,#greenbg-id span{ color:#fff; font-weight:400; text-decoration:none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s; }
 
 .booknow{ float:right; display:block; margin:-5px 0 0 5px; background:#d25a17; color:#fff; font-size:14px; padding:10px 25px; border-radius:45px; font-weight:600; text-transform:none; text-decoration:none!important;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .booknow:hover {background:#e2c10d;  color:#fff;}
-
 .booknow_mobile{ float:right; display:block; margin:-70px 45px 2px 0; background:#d25a17; color:#fff; font-size:14px; padding:10px 20px; border-radius:25px; font-weight:500; text-transform:none; text-decoration:none!important;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .booknow_mobile:hover {background:#e2c10d;  color:#fff;}
 .DOOSAN-V8300 img{width:100%;} 
@@ -237,24 +260,13 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 .menu li{ list-style:none; float:left!important;  color:#ffd628; font-weight:400; font-size:12px; padding:5px 5px 5px 10px; line-height:20px; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s; text-transform:uppercase; padding:0px  10px;}
 .menu li a{color:#ffd628; float:left!important;}
 .menu li a:hover{ color:#fff; text-decoration:none;}
-
-/*.main{ background:#fff; display:block; width:100%;}*/
 .white_bg{ background:#fff; width:100%; height:auto; padding:0px;}
-
-
 .scroller { padding:10px 15px; background:#FFFFFF;   }
-
 .logo { display:inline-block; margin:10px 0px;}
-
-
 .banner_bg {margin:0!important; padding:0!important;}
 .fade_slider {margin:0!important; padding:0!important;}
-
-
-
-
 header .navbar { margin-bottom:0px; border:0px; margin-top:35px!important; z-index:9999;}
-header .navbar-nav > li { /*padding-left:2px; padding-right:2px; */ padding:1px 10px ;}
+header .navbar-nav > li {  padding:1px 10px ;    cursor: pointer;}
 header .navbar-nav > li > a {   color:#4b4b4b !important; border-bottom:2px transparent solid; display:block; font-size:14px; font-weight:500; text-transform:uppercase; line-height:10px; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 header .navbar-nav > li:hover a { color:#333 !important; border-bottom:2px #281370 solid;}
 header .navbar-nav > li.active > a { color:#333!important; border-bottom:2px #281370 solid;}
@@ -264,7 +276,7 @@ header .navbar-nav > li > a:hover { color:#333 !important; border-bottom:2px #28
 header .navbar-nav li a .caret { margin-top:-3px; border-width: 4px 4px 0 4px;}
 
 .banner_bg {width:100%; margin:0!important; padding:0!important;}
-.contact .person .mob_ico_cont,.contact .mob_ico_cont{padding-left:22px;}
+.contact .person .mob_ico_cont,.contact .mob_ico_cont{padding-left:22px;width:calc(100% - 32px);}
 .contact .person:nth-of-type(1),.contact .address:nth-of-type(1){margin-bottom:20px;}
 
 .banner_bg .fade_slider li img{width:100%;}
@@ -287,7 +299,7 @@ header .navbar-nav li a .caret { margin-top:-3px; border-width: 4px 4px 0 4px;}
     font-weight: 600;
     line-height: 49px;
     text-align: center;
-    width: 51%;}
+    width: 51%;text-shadow:0px 1px #1a1a1a;}
 .banner_txt .read_more_link { display:inline-block; padding:8px 20px; border:2px solid #fff; color:#fff; font-size:18px;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;   }
 .banner_txt .read_more_link:hover { text-decoration:none; border-color:#ED1C24; background-color:#ED1C24; color:#fff;  }
 
