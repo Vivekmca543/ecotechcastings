@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
-@font-face {
-	font-family: verdana;
-	src: url(./../fonts/verdana.tff);
-  }
+  @font-face {
+    font-family: 'Peddana';
+    src: url('./../fonts/Peddana.woff2') format('woff2'),
+        url('./../fonts/Peddana.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Style for the popup container */
-body{min-height:740px}
+body{min-height:740px;font-size:16px;}
 .view-more-btn{width:86px;text-align: center;margin: 20px auto;font-size: 12px;font-weight: bold;cursor: pointer;display:flex;flex-direction: column;}
 .view-more-btn span:nth-of-type(2){    height: 1px;
   top: -7px;
@@ -44,7 +48,7 @@ body{min-height:740px}
 .float-left{float:left}
 .pull-right.mob_ico_cont p .email-sec{color: #333;font-style: normal;}
 .contact_hgt.address-eco{margin-bottom:30px !important;}
-
+.contact{display:flex;}
 #ecotech-enquiry{
 	display: none;
     position: fixed;
@@ -115,7 +119,7 @@ a:hover {text-decoration:none;}
 body {
 	margin: 0px;
 	padding:0px;
-	font-family: verdana;
+	font-family: 'Peddana';
 	font-size:1em;
 	font-weight:400;
 	background-color:#fff;
@@ -235,13 +239,13 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 }
 .navbar-default {background:transparent !important}
 .head_top_bg{background:#281370; width:100%; display:block;overflow:hidden;}
-.head_top_bg p { color:#fff; font-size:14px;}
-.head_top_bg p,.ph-mail a,#greenbg-id span{padding:10px 0px;float:left}
+.head_top_bg p { color:#fff; font-size:23px;}
+.head_top_bg p,.ph-mail a,#greenbg-id span{padding:10px 0px;float:left;}
 #greenbg-id span{font-size: 1.33333333em;}
 .ph-mail a,#greenbg-id span{padding:10px;}
 .head_top_bg a {color:#fff; font-size:14px; text-decoration:none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .head_top_bg a:hover {color:#fff;}
-
+.navbar-default .navbar-nav > li > a{font-size: 20px;}
 .mobi_txt {float:right;}
 
 .socialmedia {margin:0px; padding:0px; list-style:none; float:right; display:block; margin:0px 0 0 10px;}
@@ -251,7 +255,8 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 .socialmedia li a:hover {background:#d25a17;  color:#fff !important;}
 
 .ph-mail { color:#fff;}
-.ph-mail a,#greenbg-id span{ color:#fff; font-weight:400; text-decoration:none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s; }
+.ph-mail a,#greenbg-id span{font-size: 22px;
+  line-height: 22px; color:#fff; font-weight:400; text-decoration:none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s; }
 
 .booknow{ float:right; display:block; margin:-5px 0 0 5px; background:#d25a17; color:#fff; font-size:14px; padding:10px 25px; border-radius:45px; font-weight:600; text-transform:none; text-decoration:none!important;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .booknow:hover {background:#e2c10d;  color:#fff;}
@@ -332,7 +337,7 @@ a.mail:hover {color:#dd2a1b;}
 
 .group h3 {font-size:18px; line-height:35px; font-weight:400; color:#212121; text-transform:uppercase; margin:10px 0; text-align:center !important;}
 .group h3 span {color:#dd2a1b;}
-.group .btn1{font-family: verdana !important; color:#212121; font-size:14px; font-weight:500; text-transform:none; text-decoration:none;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
+.group .btn1{font-family: 'Peddana' !important; color:#212121; font-size:14px; font-weight:500; text-transform:none; text-decoration:none;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .group .btn1:hover {color:#dd2a1b;}
 
 
@@ -592,9 +597,9 @@ select option[val="2"]{
 .footer img {margin-bottom:35px;}
 .footer a {font-weight:400;color: #efefef; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .footer a:hover {color: #f5c400; text-decoration:none;}
-.footer p {font-size:16px; color:#efefef; font-weight:400; line-height:35px;}
+.footer p { font-size:21px; line-height:32px; color:#efefef; font-weight:400;}
 .footer ul { margin:0px; padding:0px; list-style:none;}
-.footer li { margin:0px; padding:0px; list-style:none; font-size:16px; color:#838181; font-weight:400; line-height:35px; text-transform:none;text-align:left !important}
+.footer li { margin:0px; padding:0px; list-style:none; font-size:22px; color:#838181; font-weight:400; line-height:32px; text-transform:none;text-align:left !important}
 .footer li a {color:#efefef; font-weight:400; text-decoration:none;-webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .footer li a:hover {color: #f5c400;}
 
@@ -622,7 +627,7 @@ select option[val="2"]{
 .youtube {float:left; display:block; margin-left:8px;}
 
 .copyright {padding:25px 0; border-top:1px #282828 solid;}
-.copyright p {color:#efefef; font-size:15px; line-height:26px;}
+.copyright p {color:#efefef; font-size:21px; line-height:26px;}
 .copyright a {color:#fff; text-decoration:none;-webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .copyright a:hover {color:#f5c400;}
 
@@ -669,7 +674,7 @@ select option[val="2"]{
 	align-items: center;background-image:url(../images/inner-banner-about.jpg); background-repeat:no-repeat; height:225px; width:100%; background-size:cover; padding:25px 35px;}
 .inner-banner-about h1 {font-weight: bold;
 	color: #fff;
-	font-size: 24px;
+	font-size: 36px;line-height:36px;
 	text-transform: none;
 	margin: 0px;}
 
@@ -682,9 +687,9 @@ select option[val="2"]{
 .inner-content-bg h1{  font-weight:500; color:#333; font-size:26px;margin:0px;}
 .inner-content-bg h1 span{ color:#fff;}
 .inner-content-bg .uline{ width:8.5%; height:2px; background:#8ac827; margin:10px 0 5px 0;}
-.inner-content-bg p{text-align:justify;font-weight:400; color:#333; font-size:16px; line-height:30px!important; margin:12px 0;}
-.inner-content-bg h3{  color:#333; font-weight:400; font-size:17px; line-height:30px!important;}
-.inner-content-bg h4{  color:#666; font-size:17px;}
+.inner-content-bg p{text-align:justify;font-weight:400; color:#333; font-size:24px; line-height:30px!important; margin:12px 0;}
+.inner-content-bg h3{  color:#333; font-weight:400; font-size:27px; line-height:30px!important;}
+.inner-content-bg h4{  color:#666; font-size:26px;}
 
 .inner-content-bg .list ul{ list-style:none; margin:0px; padding:0px;}
 .inner-content-bg .list li{ list-style:none; margin:0px; padding:0px; background: url(../images/bullet1.png) no-repeat left 8px!important;    font-weight:400; color:#333; font-size:16px; padding-left:20px;line-height:30px!important;}
@@ -1248,7 +1253,7 @@ a.ftr{text-align:left !important; }
 .enqry_form p { font-size:13px;}
 
 .footer li a {font-weight:300; font-size:14px;}
-.footer p{font-weight:300; font-size:14px; line-height:24px;}
+.footer p{font-weight:300; font-size:21px; line-height:32px;}
 }
 
 
