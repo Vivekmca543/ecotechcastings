@@ -1123,9 +1123,6 @@ h1 { font-size:35px; }
 .infra .uline{ width:50%;}
 .infra_cont {padding: 45px 0;}
 .infra_cont_inner {height:auto;}
-.infra_cont_inner h4 {font-size:16px;}
-.infra_cont_inner p {font-size:14px;}
-
 .qty_cont_inner {height:auto;}
 .qty_policy {width:100%; padding:30px 15px;}
 .qty_policy img {margin:20px 0 0 0;}
@@ -1195,8 +1192,7 @@ h1 { font-size:28px; }
 .infra .uline{ width:50%;}
 .infra_cont {padding: 45px 0;}
 .infra_cont_inner {height:auto;}
-.infra_cont_inner h4 {font-size:16px;}
-.infra_cont_inner p {font-size:14px;}
+
 .qty_cont_inner {height:auto;}
 .cont_process img {border-radius:300px; max-width:50%!important;}
 .qty_policy {width:100%; padding:30px 15px;}
