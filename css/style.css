@@ -130,7 +130,7 @@ body {
     width: 100%;
     top: 0px;
 }
-.quality-policies li span{font-size: 2.063em;height:20px;
+.quality-policies li span{font-size: 2.063em;height:20px;padding-top:8px;
 	float: left;
 	padding-right: 10px;}
 /* Selection colours */
