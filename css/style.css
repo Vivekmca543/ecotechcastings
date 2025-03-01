@@ -240,13 +240,15 @@ box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);
 .navbar-default {background:transparent !important}
 .head_top_bg{background:#281370; width:100%; display:block;overflow:hidden;}
 .head_top_bg > .container{display:flex;align-items: center;}
-.head_top_bg p { color:#fff; font-size:22px;}
+.head_top_bg p { color:#fff; font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;}
 .head_top_bg p,.ph-mail a,#greenbg-id span{padding:10px 0px;float:left;}
 #greenbg-id span{font-size: 1.33333333em;}
 .ph-mail a,#greenbg-id span{padding:10px;}
 .head_top_bg a {color:#fff; font-size:14px; text-decoration:none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;}
 .head_top_bg a:hover {color:#fff;}
-.navbar-default .navbar-nav > li > a{font-size: 22px;}
+.navbar-default .navbar-nav > li > a{font-size: 22px;font-weight:bold;}
 .mobi_txt {float:right;}
 
 .socialmedia {margin:0px; padding:0px; list-style:none; float:right; display:block; margin:0px 0 0 10px;}
@@ -303,10 +305,10 @@ header .navbar-nav li a .caret { margin-top:-3px; border-width: 4px 4px 0 4px;}
 
 .banner_bg .slick-prev:hover, .banner_bg .slick-next:hover { background-position:bottom; }
 .banner_bg h3 { color:#fff; font-size:25px; font-weight:400; }
-.banner_bg .large_txt {color: #ffffff;
-    font-size: 29px;
+.banner_bg .large_txt {text-transform: uppercase;color: #ffffff;
+    font-size: 40px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 50px;
     text-align: center;
     width: 51%;text-shadow:0px 1px #1a1a1a;}
 .banner_txt .read_more_link { display:inline-block; padding:8px 20px; border:2px solid #fff; color:#fff; font-size:18px;  -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; -o-transition: all ease 0.3s; -ms-transition: all ease 0.3s; transition: all ease 0.3s;   }
@@ -676,7 +678,7 @@ select option[val="2"]{
 .inner-banner-about h1 {font-weight: bold;
 	color: #fff;
 	font-size: 36px;line-height:36px;
-	text-transform: none;
+  text-transform: uppercase;
 	margin: 0px;}
 
 #ecotech-closeenquiry{position: absolute;
@@ -685,12 +687,12 @@ select option[val="2"]{
 }
 .w-100{width:100%;}
 .inner-content-bg{ background:#fff; width:100%; padding:30px 30px 10px 30px;float:left;  }
-.inner-content-bg h1{  font-weight:500; color:#333; font-size:26px;margin:0px;}
+.inner-content-bg h1{font-weight:bold; color:#333; font-size:26px;margin:0px;}
 .inner-content-bg h1 span{ color:#fff;}
 .inner-content-bg .uline{ width:8.5%; height:2px; background:#8ac827; margin:10px 0 5px 0;}
 .inner-content-bg p{text-align:justify;font-weight:400; color:#333; font-size:22px; line-height:30px!important; margin:12px 0;}
 .inner-content-bg h3{  color:#333; font-weight:400; font-size:27px; line-height:30px!important;}
-.inner-content-bg h4{  color:#666; font-size:26px;}
+.inner-content-bg h4{  color:#666; font-size:26px;font-weight:bold;}
 
 .inner-content-bg .list ul{ list-style:none; margin:0px; padding:0px;}
 .inner-content-bg .list li{ list-style:none; margin:0px; padding:0px; background: url(../images/bullet1.png) no-repeat left 8px!important;    font-weight:400; color:#333; font-size:16px; padding-left:20px;line-height:30px!important;}
@@ -1053,7 +1055,7 @@ header .navbar-nav > li > a {   color:#494949 !important;font-weight:400; text-t
 .banner_bg .fade_slider .slick-dots { bottom:10px; }
 .banner_bg .banner_txt { padding-top:0px; }
 .banner_bg h3 { font-size: 30px; }
-.banner_bg .large_txt { font-size: 80px; line-height: 80px; }
+.banner_bg .large_txt { font-size: 80px; line-height: 80px;}
 .banner_txt .read_more_link { padding:8px 15px; font-size:16px; }
 .side_bar{margin:10px 0px;}
 .carimg {padding:0;}
