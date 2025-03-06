@@ -149,9 +149,9 @@ $(function(){
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <h5>Contact Info</h5>
           <!-- <div class="uline"></div> -->
-          <div><p><strong>Office : </strong> 1057, Jaya Enclave, 3rd Floor, Avinashi Road, Coimbatore – 641 018</p>
+          <div><p><strong>Office : </strong> 1057, Jaya Enclave, 3rd Floor, Avinashi Road, Coimbatore - 641 018</p>
           <p>Phone :  0422 - 2248913, 4393037  |  Mobile : +91 96778 33499, +91 90035 97798 </p></div>
-          <div><p><strong>Machine Shop : </strong> 4/396, Maddampalayam, Bilichi PO, Coimbatore – 641 019</p>
+          <div><p><strong>Machine Shop : </strong> 4/396, Maddampalayam, Bilichi PO, Coimbatore - 641 019</p>
           <p>Phone :  04254 - 7140530 </p></div>
           <p>Email : <a href="mailto:info@ecotechcastings.in">info@ecotechcastings.in</a>, <a href="mailto:sales@ecotechcastings.in">sales@ecotechcastings.in</a></p>
         </div>
@@ -159,7 +159,7 @@ $(function(){
         <br>
         <div class="copyright">
           <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
-            <p>&copy; Copyright 2024 ECOTECH CASTINGS INDIA PVT. LTD . All rights reserved.</p>
+            <p>&copy; Copyright 2024 ECOTECH CASTINGS INDIA PVT. LTD. All rights reserved.</p>
             </p>
           </div>
           
@@ -235,8 +235,15 @@ function updatePosition() {
       });
   $(document).ready(function() {
       $(document).on('click', '.ecotech-popup-trigger', function() {
-    var imgSrc = $(this).attr('src');
+      let imgSrc = $(this).attr('src');
+      let ecotechhidden_Material = $(this).closest('.prod_cont_inner').find('li:nth-child(1)').text();
+      let ecotechhidden_dimention = $(this).closest('.prod_cont_inner').find('li:nth-child(2)').text();
+      let ecotechhidden_materialtext = $(this).closest('.prod_cont_inner').find('.product-heads').text();
           $('#ecotech-popupImage').attr('src', imgSrc);
+          $('#ecotech-material').text(ecotechhidden_Material);
+          $('#material-text').text(ecotechhidden_materialtext);
+          
+          $('#ecotech-dimention').text(ecotechhidden_dimention);
           $('#ecotech-popup').fadeIn();
   });
 document.addEventListener('click', function(event) {
