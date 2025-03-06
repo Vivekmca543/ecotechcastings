@@ -10,6 +10,7 @@
 
 /* Style for the popup container */
 body{min-height:740px;font-size:16px;}
+.ecotech-hidden-details-1{position:absolute;z-index:-10;top:-100px;left:-100px;}
 .view-more-btn{width:86px;text-align: center;margin: 20px auto;font-size: 22px;font-weight: bold;cursor: pointer;display:flex;flex-direction: column;}
 .view-more-btn span:nth-of-type(2){    height: 1px;
   top: -7px;
@@ -709,10 +710,11 @@ select option[val="2"]{
 .infra_cont_inner:hover {-webkit-box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2); -moz-box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2); box-shadow: 0px 6px 19px -1px rgba(0,0,0,0.2);}
 .infra_cont_inner h4{font-size:16px; font-weight:600; margin:10px 0;}
 .award-img{height:500px;}
+.infra_cont_inner .text-center p,.DOOSAN-V8300 .text-center p{text-align:center !important}
 .infra_cont_inner p {font-size: 21px;
 	font-weight: 400;
 	margin: 10px 0;
-	text-align: left!important;
+	text-align: left;
 	color: #666666;
 	line-height: 35px!important;
 	width: 100%;
