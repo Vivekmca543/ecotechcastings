@@ -51,7 +51,7 @@ body{min-height:740px;font-size:16px;}
 .float-left{float:left}
 .pull-right.mob_ico_cont p .email-sec{color: #333;font-style: normal;}
 .contact_hgt.address-eco{margin-bottom:30px !important;}
-.contact{display:flex;}
+/*.contact{display:flex;}*/
 #ecotech-enquiry{
 	display: none;
     position: fixed;
