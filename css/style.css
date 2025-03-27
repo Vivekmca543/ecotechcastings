@@ -10,7 +10,8 @@
 
 /* Style for the popup container */
 body{min-height:740px;font-size:16px;}
-.ecotech-whatapp{width: 40px;height: 40px;position: fixed;z-index: 10000;top: 30px;right: 25px;}
+.ecotech-whatapp{width: 40px;height: 40px;position: fixed;z-index: 10000;top: 8px;
+    right: 23px;}
 .ecotech-hidden-details-1{position:absolute;z-index:-10;top:-100px;left:-100px;}
 .view-more-btn{width:86px;text-align: center;margin: 20px auto;font-size: 22px;font-weight: bold;cursor: pointer;display:flex;flex-direction: column;}
 .view-more-btn span:nth-of-type(2){    height: 1px;
