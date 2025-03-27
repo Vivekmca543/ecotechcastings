@@ -937,6 +937,7 @@ box-shadow: -1px 3px 18px -3px rgba(0,0,0,0.75);
 	.col-bg1, .col-bg2, .col-bg3{ height: auto; margin-bottom:10px;}
 }
 @media (max-width: 991px){
+  .contact .bodr{border-right:none !important;}
 	.cont-icon1 .col-md-4{ width: 100%;}
 	.col-bg1, .col-bg2, .col-bg3{ height: auto; margin-bottom:10px;}
 	.qty_policy .content_right{ padding:25px 35px	 }
