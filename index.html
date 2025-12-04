@@ -40,15 +40,14 @@ function loadHTML(page,element) {
     $('header').removeClass('home-page');
   }
 }
-$(function(){
-  document.querySelector('.navbar-nav li:nth-child(1)').classList.add('active');
-  $("#content").load('home.html');   
-})
+// $(function(){
+//   document.querySelector('.navbar-nav li:nth-child(1)').classList.add('active');
+//   $("#content").load('home.html');   
+// })
 </script>
 </head>
 <body>
 <div class="main">
-  <a href="https://wa.me/+919677833499" target="_blank"><img src="images/whatsapp-icon.png" class="ecotech-whatapp"></a>
   <div class="white_bg">
       <header class="mobile-menu home-page">
           <div class="head_top_bg position-relative">
@@ -72,7 +71,7 @@ $(function(){
                   </div>
                   <ul class="socialmedia">
                     <li><a href="mailto:info@ecotechcastings.in" class="icon hidden-lg hidden-md hidden-sm"><i class="fa fa-envelope facolor"></i></a></li>
-                    <li><a href="tel:+91 9677833499"class="icon hidden-lg hidden-md hidden-sm"><i class="fa fa-mobile facolor"></i></a></li>
+                    <li><a href="tel:+919344944233"class="icon hidden-lg hidden-md hidden-sm"><i class="fa fa-mobile facolor"></i></a></li>
                     <li><a href="#" class="icon hidden-lg hidden-md hidden-sm"><i class="fa fa-phone facolor"></i></a></li>
                   </ul>
                 </div>
@@ -93,12 +92,12 @@ $(function(){
                 <nav class="navbar navbar-default">
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                      <li class="active homepage" onclick="loadHTML('home.html', this)"><a>Home</a></li>
-                      <li onclick="loadHTML('about-us.html', this)"><a>About us</a></li>
-                      <li onclick="loadHTML('products.html', this)"><a>Products</a></li>
-                      <li onclick="loadHTML('infrastructure.html', this)"><a>Infrastructure</a></li>
-                      <li onclick="loadHTML('quality-assurance.html', this)"><a>Quality Assurance</a></li>
-                      <li onclick="loadHTML('contact.html', this)"><a>Contact</a></li>
+                      <li class="active homepage"><a>Home</a></li>
+                      <li><a href="about-us.html">About us</a></li>
+                      <li><a href="products.html">Products</a></li>
+                      <li><a href="infrastructure.html">Infrastructure</a></li>
+                      <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                      <li><a href="contact.html">Contact</a></li>
                       <li><a class="ecotech-popup-enquiry">Enquiry</a></li>
                     </ul>
                     <div class="clearfix"></div>
@@ -112,7 +111,135 @@ $(function(){
  </div>
  <div class="clearfix"></div>
   <div class="home_content_bg">
-      <div id="content"></div>
+      <div id="content">
+
+        <div class="banner_bg">
+    <ul class="fade_slider">
+        <li class="slide6">
+            <div>
+              <img src="images/ecotechSlide1.jpg" class="slide-img"/>
+              <div class="banner_txt">                
+                <div class="large_txt">
+                  <span>Welcome to</span><br/> 
+                    <span>ECOTECH CASTINGS INDIA PRIVATE LIMITED</span><br/>
+                      <span>we are ISO 9001:2015 Certified suppliers of valve internals to all global valve manufacturers</span>
+                </div>          </div>
+            </div>
+          </li>
+          <li class="slide6">
+            <div>
+              <img src="images/ecotechSlide2.jpg" class="slide-img"/>
+              <div class="banner_txt">                
+                <div class="large_txt">
+                  <span>Welcome to</span><br/> 
+                    <span>ECOTECH CASTINGS INDIA PRIVATE LIMITED</span><br/>
+                    <span> COMPREHENSIVE SOLUTION FOR ALL TYPES OF MACHINED COMPONENTS</span>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="slide6">
+            <div>
+              <img src="images/ecotechSlide3.jpg" class="slide-img"/>
+              <div class="banner_txt">                
+                <div class="large_txt">   <span>Welcome to</span><br/> 
+                  <span>ECOTECH CASTINGS INDIA PRIVATE LIMITED</span><br/>
+                    <span>we are ISO 9001:2015 Certified suppliers of valve internals to all global valve manufacturers</span>  
+                    </div>          </div>
+            </div>
+          </li>
+    </ul>
+  </div>
+  <div class="inner-content-bg">
+    <div class="container">
+      <div class="col-lg-12">
+        <!-- <h1>About us</h1>
+            <div class="uline"></div>                 -->
+            <div class="row">
+            <div class="col-lg-12">
+            <p>Ecotech Castings India Private Limited was started in the year 2003 in Coimbatore, Tamilnadu and is a sister concern of Peekay Group (Peekay Steel Castings Pvt. Ltd., Calicut, Kerala) which was established in the year 1942</p>
+            <p>Our focus is to create market/supply of all precision components in castings, forgings, fabrication and internals in different material grades to all kinds of global valve manufacturers at competitive price and quality.</p> 
+              </div>
+            </div>
+         </div> 
+      <div class="col-lg-12" id="ecotech-imagecontainer">
+        <div id="ecotech-popup" class="ecotech-popup">
+          <div class="ecotech-popup-content">
+              <span id="ecotech-closePopup" class="ecotech-close">×</span>
+              <img id="ecotech-popupImage" src="" alt="Popup Image" class="img-responsive">
+              <div class="popup-dimensions">
+              <h3>Control Valve Seat Ring</h3>
+              <ul>
+                <li><span>Material </span><span>Ferrous, Non Ferrous</span></li>
+                <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+              </ul>
+              </div>  
+          </div>
+      </div>
+
+      <div>
+        <h1 class="mb-3">Our Products</h1>
+            <!-- <div class="uline"></div> -->
+            <div class="prod_cont">
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="prod_cont_inner">
+                      <div><img src="images/forgings/forgings (9).jpg" class="img-responsive"></div>
+                      <div class="product-heads">BODY</div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="prod_cont_inner">
+                      <div><img src="images/steelcastings/steelcastings (21).jpeg" class="img-responsive"></div>
+                       <div class="product-heads">BONNET</div>
+                  </div>
+              </div>
+             
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="prod_cont_inner">
+                      <div><img src="images/investment/investment (5).jpeg" class="img-responsive"></div>
+                       <div class="product-heads">DISC</div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="prod_cont_inner">
+                      <div><img src="images/steelcastings/steelcastings (5).jpeg" class="img-responsive"></div>
+                       <div class="product-heads">BODY</div>
+                  </div>
+              </div>
+            
+             
+            </div>
+          </div>
+          <div class="view-more-btn"  onclick="loadHTML('products.html', this)"><span>View more</span></div>
+         </div>  
+       
+    </div>
+</div>
+<script>
+  
+jQuery('.fade_slider').slick({
+  dots: true,
+  infinite: true,
+  arrows: false,
+  draggable: false,
+  speed: 500,
+  fade: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  accessibility: false,
+  cssEase: 'linear',
+  responsive: [
+   {
+    breakpoint:992,
+    settings: {
+      draggable: true
+    } 
+   }
+  ]
+});
+</script>    
+
+      </div>
         <div class="clearfix"></div>
   </div>
 <div class="eco_enqry position-relative">
@@ -127,16 +254,16 @@ $(function(){
             <div class="col-lg-6">
               <ul>
                             
-                <li onclick="loadHTML('home.html', this)"><a>Home</a></li>
-                <li onclick="loadHTML('about-us.html', this)"><a>About us</a></li>
-                <li onclick="loadHTML('products.html', this)"><a>Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="products.html">Products</a></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li onclick="loadHTML('infrastructure.html', this)"><a>Infrastructure</a></li>
-                <li onclick="loadHTML('quality-assurance.html', this)"><a>Quality Assurance</a></li>
-                <li onclick="loadHTML('contact.html', this)"><a>Contact</a></li>
+                <li><a href="infrastructure.html">Infrastructure</a></li>
+                <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a class="ecotech-popup-enquiry">Enquiry</a></li>
               </ul>
             </div>
@@ -150,9 +277,9 @@ $(function(){
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <h5>Contact Info</h5>
           <!-- <div class="uline"></div> -->
-          <div><p><strong>Office : </strong> 1057, Jaya Enclave, 3rd Floor, Avinashi Road, Coimbatore - 641 018</p>
+          <div><p><strong>Office : </strong> 1057, Jaya Enclave, 3rd Floor, Avinashi Road, Coimbatore – 641 018</p>
           <p>Phone :  0422 - 2248913, 4393037  |  Mobile : +91 96778 33499, +91 90035 97798 </p></div>
-          <div><p><strong>Machine Shop : </strong> 4/396, Maddampalayam, Bilichi PO, Coimbatore - 641 019</p>
+          <div><p><strong>Machine Shop : </strong> 4/396, Maddampalayam, Bilichi PO, Coimbatore – 641 019</p>
           <p>Phone :  04254 - 7140530 </p></div>
           <p>Email : <a href="mailto:info@ecotechcastings.in">info@ecotechcastings.in</a>, <a href="mailto:sales@ecotechcastings.in">sales@ecotechcastings.in</a></p>
         </div>
@@ -160,7 +287,7 @@ $(function(){
         <br>
         <div class="copyright">
           <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
-            <p>&copy; Copyright 2024 ECOTECH CASTINGS INDIA PVT. LTD. All rights reserved.</p>
+            <p>&copy; Copyright 2024 ECOTECH CASTINGS INDIA PVT. LTD . All rights reserved.</p>
             </p>
           </div>
           
@@ -236,15 +363,8 @@ function updatePosition() {
       });
   $(document).ready(function() {
       $(document).on('click', '.ecotech-popup-trigger', function() {
-      let imgSrc = $(this).attr('src');
-      let ecotechhidden_Material = $(this).closest('.prod_cont_inner').find('li:nth-child(1)').text();
-      let ecotechhidden_dimention = $(this).closest('.prod_cont_inner').find('li:nth-child(2)').text();
-      let ecotechhidden_materialtext = $(this).closest('.prod_cont_inner').find('.product-heads').text();
+    var imgSrc = $(this).attr('src');
           $('#ecotech-popupImage').attr('src', imgSrc);
-          $('#ecotech-material').text(ecotechhidden_Material);
-          $('#material-text').text(ecotechhidden_materialtext);
-          
-          $('#ecotech-dimention').text(ecotechhidden_dimention);
           $('#ecotech-popup').fadeIn();
   });
 document.addEventListener('click', function(event) {

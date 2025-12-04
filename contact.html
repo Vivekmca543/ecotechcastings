@@ -1,6 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ECOTECH CASTINGS INDIA PVT. LTD</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/animate.min.css" rel="stylesheet" type="text/css"  />
+<link href="css/slick.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(window).scroll(function() {
+  var stickymenu = $('.mobile-menu'),
+    scroll = $(window).scrollTop();
+  if (scroll >= 40) { 
+    stickymenu.addClass('fixed'); }
+  else { 
+    stickymenu.removeClass('fixed');
+}
+});
+function loadHTML(page,element) {
+  $('html, body').scrollTop(0);
+  document.querySelectorAll('.navbar-nav li').forEach(link => link.classList.remove('active'));
+  $("#content").load(page);
+  if($(element).hasClass('homepage')){
+    $('header').addClass('home-page');
+    $(element).addClass('active');  
+  }
+  else if($(element).hasClass('view-more-btn')){
+    $('.navbar-nav li:nth-child(3)').addClass('active'); 
+  }
+  else{
+    $(element).addClass('active');
+    $('header').removeClass('home-page');
+  }
+}
+// $(function(){
+//   document.querySelector('.navbar-nav li:nth-child(1)').classList.add('active');
+//   $("#content").load('home.html');   
+// })
+</script>
+</head>
+<body>
+<div class="main">
+  <div class="white_bg">
+      <header class="mobile-menu home-page">
+          <div class="head_top_bg position-relative">
+              <div class="green-bg-brdr position-absolute"></div>
+            <div class="container">
+              <div class="col-lg-5 col-md-6 col-sm-4 col-xs-5 hidden-xs">
+                  <p>Welcome to ECOTECH CASTINGS INDIA PVT. LTD</p>
+              </div>
+              <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12">
+                <div class="mobi_txt">
+                  <div class="position-absolute"></div>
+                  <div class="ph-mail hidden-xs"> 
+                    <div class="hidden-xs contact-num">
+                      <a href="mailto:info@ecotechcastings.in">
+                        <i class="fa fa-envelope fa-lg facolor" aria-hidden="true"></i>&nbsp;info@ecotechcastings.in</a>                   
+                      <div  id="greenbg-id">
+                        <span class="hidden-xs"><i class="fa fa-mobile fa-lg facolor" aria-hidden="true"></i>&nbsp;+91 96778 33499</span>
+                        <span class="hidden-xs"><i class="fa fa-phone fa-lg facolor" aria-hidden="true"></i>&nbsp;0422 - 2248913, 4393037</span> 
+                      </div>
+                      </div> 
+                  </div>
+                  <ul class="socialmedia">
+                    <li><a href="mailto:info@ecotechcastings.in" class="icon hidden-lg hidden-md hidden-sm"><i class="fa fa-envelope facolor"></i></a></li>
+                    <li><a href="tel:+919344944233"class="icon hidden-lg hidden-md hidden-sm"><i class="fa fa-mobile facolor"></i></a></li>
+                    <li><a href="#" class="icon hidden-lg hidden-md hidden-sm"><i class="fa fa-phone facolor"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ecotech-header-wrap">
+          <div class="container">
+            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-12">
+              <div class="row"> <a onclick="event.preventDefault();" class="logo" alt="Ecotech"><img src="images/logo.png" class="img-responsive-ecotech" alt="Ecotech" /></a>
+                <div class="mob_menu_btns pull-right visible-xs">
+                  <button type="button" class="navbar-toggle collapsed mob_menu_btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="visible-xs">menu</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-10 col-xs-12">
+              <div class="row">
+                <nav class="navbar navbar-default">
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active homepage"><a href="index.html" >Home</a></li>
+                      <li><a href="about-us.html">About us</a></li>
+                      <li><a href="products.html">Products</a></li>
+                      <li><a href="infrastructure.html">Infrastructure</a></li>
+                      <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a class="ecotech-popup-enquiry">Enquiry</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          </div>
+        </header> 
+ </div>
+ <div class="clearfix"></div>
+  <div class="home_content_bg">
+      <div id="content">
 
- 
-  
   <div class="inner-banner-about">
   		<div class="container">
             <div class="col-lg-12">
@@ -18,7 +130,7 @@
                 <div class="contact">
                 	
                     
-                    <div class="col-lg-4 col-sm-6 col-xs-12 bodr contact_hgt">
+                    <div class="col-lg-4 bodr contact_hgt">
                     	<div class="call">                        	
                             <div class="pull-right mob_ico_cont">
                             <p>Phone : 0422-2248913, 4393037<br/>
@@ -34,23 +146,23 @@
                             <div class="clearfix"></div>
 						</div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12 bodr contact_hgt">
+                    <div class="col-lg-4 bodr contact_hgt">
                         <div class="address">
                             <!-- <div class="pull-left mob_ico"><img src="images/ico_location.png" class="img-responsive"></div> -->
                               <div class="pull-left mob_ico_cont">
                               <p><strong>Machine Shop :</strong><br/>
-                                  4/396, Maddampalayam,<br> Bilichi PO,<br> Coimbatore - 641 019
+                                  4/396, Maddampalayam,<br> Bilichi PO,<br> Coimbatore – 641 019
                               </p>
                               </div>
                               <div class="clearfix"></div>
                           </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12 contact_hgt address-eco">
+                    <div class="col-lg-4 contact_hgt address-eco">
                     	<div class="address">
                         	<!-- <div class="pull-left mob_ico"><img src="images/ico_location.png" class="img-responsive"></div> -->
                             <div class="pull-left mob_ico_cont">
                             <p><strong>Office :</strong><br/>
-                                1057, Jaya Enclave, 3rd Floor,<br/> Avinashi Road,<br> Coimbatore - 641 018
+                                1057, Jaya Enclave, 3rd Floor,<br/> Avinashi Road,<br> Coimbatore – 641 018
                             </p>
                             </div>
                             <div class="clearfix"></div>
@@ -65,4 +177,154 @@
  <div class="map">
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665.693021425814!2d76.96116554284252!3d11.006836496475144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859b1da3142c5%3A0x64fae37555ac292d!2sEco%20Tech%20Castings%20India%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1720250580337!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
  </div>
+ </div>
+        <div class="clearfix"></div>
+  </div>
+<div class="eco_enqry position-relative">
+      <div class="green-bg-brdr position-absolute"></div>
+  </div>
+ <div class="footer">
+      <div class="container"> 
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <h5>Quick Links</h5>
+          <!-- <div class="uline"></div> -->
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="products.html">Products</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><a href="infrastructure.html">Infrastructure</a></li>
+                <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="ecotech-popup-enquiry">Enquiry</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row location">
+            <div class="col-lg-12">
+              <p><i class="fa fa-map-marker facolor1" aria-hidden="true"></i>&nbsp; <a href="contact.html">View Location Map</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <h5>Contact Info</h5>
+          <!-- <div class="uline"></div> -->
+          <div><p><strong>Office : </strong> 1057, Jaya Enclave, 3rd Floor, Avinashi Road, Coimbatore – 641 018</p>
+          <p>Phone :  0422 - 2248913, 4393037  |  Mobile : +91 96778 33499, +91 90035 97798 </p></div>
+          <div><p><strong>Machine Shop : </strong> 4/396, Maddampalayam, Bilichi PO, Coimbatore – 641 019</p>
+          <p>Phone :  04254 - 7140530 </p></div>
+          <p>Email : <a href="mailto:info@ecotechcastings.in">info@ecotechcastings.in</a>, <a href="mailto:sales@ecotechcastings.in">sales@ecotechcastings.in</a></p>
+        </div>
+        <div class="clearfix"></div>
+        <br>
+        <div class="copyright">
+          <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+            <p>&copy; Copyright 2024 ECOTECH CASTINGS INDIA PVT. LTD . All rights reserved.</p>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
+<div id="ecotech-enquiry">
+  <span id="ecotech-closeenquiry" class="ecotech-close">×</span>
+<div class="inner-content-bg">
+  <div class="float-left w-100">
+    <div class="col-lg-12">
+          
+          <div class="row">
+          
+<div class="col-lg-12 col-xs-12 text-left">
+          <p>Please fill the mandatory fields.</p>
+          <form class="pad" id="ecotechenquiryForm" name="contactForm">
+    <table class="enquiry_form">
+      <tbody><tr>
+        <td class="left_section">Name <span class="red">*</span></td>
+        <td><input required="required" id="name" name="name" type="text" class="text_box" value=""></td>
+      </tr>
+      <tr>
+        <td class="left_section">Email <span class="red">*</span></td>
+        <td><input required="required" id="email" name="email" type="email" class="text_box" value=""></td>
+      </tr>
+      <tr>
+        <td class="left_section">Phone <span class="red">*</span></td>
+        <td><input required="required" id="phone" name="phone" type="number" class="text_box" value=""></td>
+      </tr>
+      <tr>
+        <td class="left_section">Comments</td>
+        <td><textarea required="required" id="message" name="message" rows="5" class="comments_box"></textarea></td>
+      </tr>
+      <tr>
+        <td class="left_section"></td>
+        <td><button type="submit" class="submit_enquiry">Submit</button></td>
+      </tr>
+      <tr>
+        <td class="result-parent"><div id="result"></div>
+        </td>
+      </tr>
+    </tbody></table>
+  </form>    
+</div>
+<div class="clearfix"></div>
+          </div>
+         
+       </div>  
+  </div>
+</div>
+</div>
+<div id="ecotech-enquiry-overlay"></div>
+<script type="text/javascript">
+$('.ecotech-popup-enquiry').on('click', function() {
+        $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeIn();
+    });
+    $('#ecotech-closeenquiry').on('click', function() {
+      $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeOut();
+    });
+window.onload = updatePosition;
+window.addEventListener("resize", updatePosition);
+function updatePosition() {
+    const element = document.querySelector("#greenbg-id").getBoundingClientRect();
+        $('.green-bg-brdr').css({'left':element.left})
+}
+  $('.ecotech-popup-enquiry').on('click', function() {
+          $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeIn();
+      });
+      $('#ecotech-closeenquiry').on('click', function() {
+        $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeOut();
+      });
+  $(document).ready(function() {
+      $(document).on('click', '.ecotech-popup-trigger', function() {
+    var imgSrc = $(this).attr('src');
+          $('#ecotech-popupImage').attr('src', imgSrc);
+          $('#ecotech-popup').fadeIn();
+  });
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('ecotech-close')) {
+          $('#ecotech-popup').fadeOut();
+  }
+});
+      // $('').on('click', function() {
+      //     $('#ecotech-popup').fadeOut();
+      // });
+       $('.nav.navbar-nav').on('click', function() {
+           if($('.navbar-collapse.collapse').hasClass('in')){
+            $('.navbar-collapse.collapse').removeClass('in');
+           }
+       });
+      $(window).on('click', function(event) {
+          if ($(event.target).is('#ecotech-popup')) {
+              $('#ecotech-popup').fadeOut();
+          }
+      });
+  });
+  </script>
+</body>
+</html>
 
