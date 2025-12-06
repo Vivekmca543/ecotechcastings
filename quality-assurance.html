@@ -28,28 +28,19 @@ function loadHTML(page,element) {
   $('html, body').scrollTop(0);
   document.querySelectorAll('.navbar-nav li').forEach(link => link.classList.remove('active'));
   $("#content").load(page);
-  if($(element).hasClass('homepage')){
-    $('header').addClass('home-page');
-    $(element).addClass('active');  
-  }
-  else if($(element).hasClass('view-more-btn')){
+  if($(element).hasClass('view-more-btn')){
     $('.navbar-nav li:nth-child(3)').addClass('active'); 
   }
   else{
     $(element).addClass('active');
-    $('header').removeClass('home-page');
   }
 }
-// $(function(){
-//   document.querySelector('.navbar-nav li:nth-child(1)').classList.add('active');
-//   $("#content").load('home.html');   
-// })
 </script>
 </head>
 <body>
 <div class="main">
   <div class="white_bg">
-      <header class="mobile-menu home-page">
+      <header class="mobile-menu">
           <div class="head_top_bg position-relative">
               <div class="green-bg-brdr position-absolute"></div>
             <div class="container">
@@ -135,7 +126,7 @@ function loadHTML(page,element) {
                         </ul>
                     </div>
                     <div class="col-lg-6">
-                    	<div align="center"><img src="images/ISOCertificate_page.jpg" class="img-responsive"></div>
+                    	<div><img src="images/ISOCertificate_page.jpg" class="img-responsive"></div>
                     </div>
                     <div class="clearfix"></div>
                </div>

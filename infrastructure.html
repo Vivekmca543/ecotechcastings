@@ -28,16 +28,11 @@ function loadHTML(page,element) {
   $('html, body').scrollTop(0);
   document.querySelectorAll('.navbar-nav li').forEach(link => link.classList.remove('active'));
   $("#content").load(page);
-  if($(element).hasClass('homepage')){
-    $('header').addClass('home-page');
-    $(element).addClass('active');  
-  }
-  else if($(element).hasClass('view-more-btn')){
+  if($(element).hasClass('view-more-btn')){
     $('.navbar-nav li:nth-child(3)').addClass('active'); 
   }
   else{
     $(element).addClass('active');
-    $('header').removeClass('home-page');
   }
 }
 // $(function(){
@@ -49,7 +44,7 @@ function loadHTML(page,element) {
 <body>
 <div class="main">
   <div class="white_bg">
-      <header class="mobile-menu home-page">
+      <header class="mobile-menu">
           <div class="head_top_bg position-relative">
               <div class="green-bg-brdr position-absolute"></div>
             <div class="container">
@@ -121,213 +116,166 @@ function loadHTML(page,element) {
   </div>
   
   <div class="inner-content-bg">
-        <div class="container">
-        	<div class="col-lg-12">
-        		<h1 class="m-3">Infrastructure</h1>
-                <!-- <div class="uline"></div> -->
-                
-                <p>We have an exclusive machine shop equipped with 2 VTL, 2 VMC , 2 HTC, Radial Drilling  and 2 lathes in order to meet the requirements of our customers. </p>
-                
-                <p>We take responsibility 	to supply the product as a whole and we could outsource certain operations wherever required.  We also associated with some foundries for our various requirements/operations</p>
-                
-               
-             </div>  
+    <div class="container">
+        <div class="col-lg-12">
+            <h1 class="m-3">Infrastructure</h1>
+            <p>We have an exclusive machine shop equipped with 3 VTL, 3 VMC , 3 HTC, Radial Drilling and 5 lathes in order to meet the requirements of our customers. </p>
+            <p>We take responsibility to supply the product as a whole and we could outsource certain operations wherever required. We also associated with some foundries for our various requirements/operations</p>
         </div>
-  </div>
+    </div>
+</div>
 
 
 <div class="infra">
-        <div class="container">
-        	<div class="col-lg-12">
-        		<h3>List of Machines</h3>
-                <!-- <div class="uline"></div> -->
-                
-                <div class="infra_cont">
-                	<div class="">
-                    
-                     <!--3-->
-                     <div class="col-lg-12">
-                      <div class="infra_cont_inner">
-                          <div class="row">
-                              <div class="col-lg-5">
-                                  <img src="images/dnm4500.jpg" class="img-responsive">
-                                </div>
+    <div class="container">
+        <div class="col-lg-12">
+            <h3>List of Machines</h3>
+            <div class="infra_cont">
+                <div class="">
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5"><img class="img-responsive" src="images/dnm4500.jpg"></div>
                                 <div class="col-lg-7">
-                                    <p>DOOSAN - DNM 4500 – VERTICAL MACHINING CENTRE 	-	1 No.
-                                        <br/> Table Size	800 x 450
-                                        Height		650 mm with high pressure through coolent.</p>
+                                    <p>DOOSAN - DNM 4500 - VERTICAL MACHINING CENTER - 1 No.
+                                        <br> Table Size 800 x 450 Height 650 mm with high pressure through coolent.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-              
-                       <!--2-->
-                        <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5">
-                                    	<img src="images/DOOSANMYNX 6500.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>DOOSAN MYNX 6500 WITH 4TH AXIS – VERTICAL MACHINING CENTRE  -  1 No.
-                                            <br/> Table Size	1400 x 670
-                                            Height		650 mm with high pressure through coolent  
-                                            4th Axis		Ø320</p>
-                                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5"><img class="img-responsive" src="images/DOOSANMYNX%206500.jpg"></div>
+                                <div class="col-lg-7">
+                                    <p>DOOSAN MYNX 6500 WITH 4TH AXIS - VERTICAL MACHINING CENTER - 1 No.
+                                        <br> Table Size 1400 x 670 Height 650 mm with high pressure through coolent 4th Axis Ø320</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                         
-                        <!--1-->
-                        <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5 DOOSAN-V8300">
-                                    	<img src="images/DOOSANV8300.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>DOOSAN V8300 -  VERTICAL TURNING LATHE – 2 Nos.
-                                            <br/> Maximum Turning Height is 750 mm
-                                            Chuck Dia	605 mm
-                                            Maximum Turning Dia is 830 mm
-                                          </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!--1-->
-                        <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5 DOOSAN-V8300">
-                                    	<img src="images/VTL-1.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>HWACHEON -  VT450(R) – 1 No.
-                                            <br/> Maximum Turning Height is 490 mm
-                                            Chuck Dia 400 mm
-                                            Maximum Turning Dia is 460 mm
-                                          </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--4-->
-                        <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5">
-                                    	<img src="images/DOOSAN LYNX 300.jpeg" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>DOOSAN LYNX 300  - HORIZONTAL TURNING CENTRE - 2 Nos.
-                                            <br/> Maximum Turning Dia -	550 mm 
-                                            Chuck Dia -	300 mm
-                                            Turning Length - 600 mm
-                                          </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                          <!--4-->
-                          <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5">
-                                    	<img src="images/HTC-1.jpeg" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>HWACHEON -  HORIZONTAL TURNING CENTRE - 1 No.
-                                            <br/> Maximum Turning Dia - 350 mm 
-                                            Chuck Dia -	250 mm
-                                            Turning Length - 610 mm
-                                          </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!--5-->
-                        <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5">
-                                    	<img src="images/product-500x500.webp" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>RADIAL DRILLING MACHINE   - MMT  MAG.3
-                                          <br/>  Maximum Drilling Size		-	50
-                                            Working Surface		-	1270 X 770 mm
-                                            Table Size			-	600 X 445 mm
-                                            </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <!--6-->
-                         <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-12 DOOSAN-V8300">
-                                    	<img src="images/LATHE-NEW .jpeg" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <p>LATHE 	-  NEW PUNJAB PMW 410
-                                            Chuck Dia			-	24”
-                                            Length				-	9 feet
-                                          </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <!--7-->
-                         <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5 DOOSAN-V8300">
-                                    	<img src="images/LATHE–GMT Chuck Dia.jpeg" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>LATHE – GMT
-                                            Chuck Dia	- 	12”
-                                            Length		-	7 feet
-                                          </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12">
-                        	<div class="infra_cont_inner">
-                            	<div class="row">
-                                	<div class="col-lg-5 DOOSAN-V8300">
-                                    	<img src="images/400i-welding-machine.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>ESAB AB TIG & ARC Welding machine - TIG 400i<br/> 
-                                          20A/20.8V - 400A/36V
-                                          </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="clearfix"></div>
-                        
                     </div>
-                </div>  
-    
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-12 DOOSAN-V8300"><img class="img-responsive" src="images/DOOSAN-MYNX-6500.png"></div>
+                                <div class="col-lg-12 text-center">
+                                    <p> DOOSAN DNM 6700XL - VERTICAL MACHINING CENTER - 1 No.
+                                        <br> Table Size 1500 x 670 Height 700 mm with high pressure through coolent.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5 DOOSAN-V8300"><img class="img-responsive" src="images/DOOSANV8300.jpg"></div>
+                                <div class="col-lg-7">
+                                    <p>DOOSAN V8300 - VERTICAL TURNING LATHE - 2 Nos.
+                                        <br> Maximum Turning Height is 750 mm Chuck Dia 605 mm Maximum Turning Dia is 830 mm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5 DOOSAN-V8300"><img class="img-responsive" src="images/VTL-1.png"></div>
+                                <div class="col-lg-7">
+                                    <p>HWACHEON - VT450(R) - VERTICAL TURNING LATHE - 1 No.
+                                        <br> Maximum Turning Height is 490 mm Chuck Dia 400 mm Maximum Turning Dia is 460 mm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5"><img class="img-responsive" src="images/DOOSAN%20LYNX%20300.jpeg"></div>
+                                <div class="col-lg-7">
+                                    <p>DOOSAN LYNX 300 - HORIZONTAL TURNING CENTER - 2 Nos.
+                                        <br> Maximum Turning Dia - 550 mm Chuck Dia - 300 mm Turning Length - 600 mm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5"><img class="img-responsive" src="images/HTC-1.jpeg"></div>
+                                <div class="col-lg-7">
+                                    <p>HWACHEON - HORIZONTAL TURNING CENTER - 1 No.
+                                        <br> Maximum Turning Dia - 350 mm Chuck Dia - 250 mm Turning Length - 610 mm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5"><img class="img-responsive" src="images/product-500x500.webp"></div>
+                                <div class="col-lg-7">
+                                    <p>RADIAL DRILLING MACHINE - MMT MAG.3
+                                        <br> Maximum Drilling Size - 50 Working Surface - 1270 X 770 mm Table Size - 600 X 445 mm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-12 DOOSAN-V8300"><img class="img-responsive" src="images/LATHE-NEW%20.jpeg"></div>
+                                <div class="col-lg-12 text-center">
+                                    <p>LATHE - NEW PUNJAB PMW 410 Chuck Dia - 24” Length - 9 feet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-12 DOOSAN-V8300"><img class="img-responsive" src="images/Lathe.jpg"></div>
+                                <div class="col-lg-12 text-center">
+                                    <p>LATHE - NEW PUNJAB PMW Chuck Dia - 24” Length - 10 Feet-1, NOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-12 DOOSAN-V8300"><img class="img-responsive" src="images/Lathe1.jpg"></div>
+                                <div class="col-lg-12 text-center">
+                                    <p>HEAVY DUTY LATHE MACHINE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5 DOOSAN-V8300"><img class="img-responsive" src="images/LATHE%E2%80%93GMT%20Chuck%20Dia.jpeg"></div>
+                                <div class="col-lg-7">
+                                    <p>LATHE - GMT Chuck Dia - 12” Length - 7 feet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="infra_cont_inner">
+                            <div class="row">
+                                <div class="col-lg-5 DOOSAN-V8300"><img class="img-responsive" src="images/400i-welding-machine.jpg"></div>
+                                <div class="col-lg-7">
+                                    <p>ESAB AB TIG &amp; ARC Welding machine - TIG 400i
+                                        <br>20A/20.8V - 400A/36V</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
         </div>
+    </div>
 </div>
 
  
@@ -390,49 +338,7 @@ function loadHTML(page,element) {
 </div>
 <div id="ecotech-enquiry">
   <span id="ecotech-closeenquiry" class="ecotech-close">×</span>
-<div class="inner-content-bg">
-  <div class="float-left w-100">
-    <div class="col-lg-12">
-          
-          <div class="row">
-          
-<div class="col-lg-12 col-xs-12 text-left">
-          <p>Please fill the mandatory fields.</p>
-          <form class="pad" id="ecotechenquiryForm" name="contactForm">
-    <table class="enquiry_form">
-      <tbody><tr>
-        <td class="left_section">Name <span class="red">*</span></td>
-        <td><input required="required" id="name" name="name" type="text" class="text_box" value=""></td>
-      </tr>
-      <tr>
-        <td class="left_section">Email <span class="red">*</span></td>
-        <td><input required="required" id="email" name="email" type="email" class="text_box" value=""></td>
-      </tr>
-      <tr>
-        <td class="left_section">Phone <span class="red">*</span></td>
-        <td><input required="required" id="phone" name="phone" type="number" class="text_box" value=""></td>
-      </tr>
-      <tr>
-        <td class="left_section">Comments</td>
-        <td><textarea required="required" id="message" name="message" rows="5" class="comments_box"></textarea></td>
-      </tr>
-      <tr>
-        <td class="left_section"></td>
-        <td><button type="submit" class="submit_enquiry">Submit</button></td>
-      </tr>
-      <tr>
-        <td class="result-parent"><div id="result"></div>
-        </td>
-      </tr>
-    </tbody></table>
-  </form>    
-</div>
-<div class="clearfix"></div>
-          </div>
-         
-       </div>  
-  </div>
-</div>
+
 </div>
 <div id="ecotech-enquiry-overlay"></div>
 <script type="text/javascript">

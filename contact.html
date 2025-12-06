@@ -28,16 +28,11 @@ function loadHTML(page,element) {
   $('html, body').scrollTop(0);
   document.querySelectorAll('.navbar-nav li').forEach(link => link.classList.remove('active'));
   $("#content").load(page);
-  if($(element).hasClass('homepage')){
-    $('header').addClass('home-page');
-    $(element).addClass('active');  
-  }
-  else if($(element).hasClass('view-more-btn')){
+  if($(element).hasClass('view-more-btn')){
     $('.navbar-nav li:nth-child(3)').addClass('active'); 
   }
   else{
     $(element).addClass('active');
-    $('header').removeClass('home-page');
   }
 }
 // $(function(){
@@ -49,7 +44,7 @@ function loadHTML(page,element) {
 <body>
 <div class="main">
   <div class="white_bg">
-      <header class="mobile-menu home-page">
+      <header class="mobile-menu">
           <div class="head_top_bg position-relative">
               <div class="green-bg-brdr position-absolute"></div>
             <div class="container">
@@ -151,7 +146,7 @@ function loadHTML(page,element) {
                             <!-- <div class="pull-left mob_ico"><img src="images/ico_location.png" class="img-responsive"></div> -->
                               <div class="pull-left mob_ico_cont">
                               <p><strong>Machine Shop :</strong><br/>
-                                  4/396, Maddampalayam,<br> Bilichi PO,<br> Coimbatore – 641 019
+                                  4/396, Maddampalayam,<br> Bilichi PO,<br> Coimbatore - 641 019
                               </p>
                               </div>
                               <div class="clearfix"></div>
@@ -162,7 +157,7 @@ function loadHTML(page,element) {
                         	<!-- <div class="pull-left mob_ico"><img src="images/ico_location.png" class="img-responsive"></div> -->
                             <div class="pull-left mob_ico_cont">
                             <p><strong>Office :</strong><br/>
-                                1057, Jaya Enclave, 3rd Floor,<br/> Avinashi Road,<br> Coimbatore – 641 018
+                                1057, Jaya Enclave, 3rd Floor,<br/> Avinashi Road,<br> Coimbatore - 641 018
                             </p>
                             </div>
                             <div class="clearfix"></div>

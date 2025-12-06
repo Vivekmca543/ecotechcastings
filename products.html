@@ -28,28 +28,19 @@ function loadHTML(page,element) {
   $('html, body').scrollTop(0);
   document.querySelectorAll('.navbar-nav li').forEach(link => link.classList.remove('active'));
   $("#content").load(page);
-  if($(element).hasClass('homepage')){
-    $('header').addClass('home-page');
-    $(element).addClass('active');  
-  }
-  else if($(element).hasClass('view-more-btn')){
+  if($(element).hasClass('view-more-btn')){
     $('.navbar-nav li:nth-child(3)').addClass('active'); 
   }
   else{
     $(element).addClass('active');
-    $('header').removeClass('home-page');
   }
 }
-// $(function(){
-//   document.querySelector('.navbar-nav li:nth-child(1)').classList.add('active');
-//   $("#content").load('home.html');   
-// })
 </script>
 </head>
 <body>
 <div class="main">
   <div class="white_bg">
-      <header class="mobile-menu home-page">
+      <header class="mobile-menu">
           <div class="head_top_bg position-relative">
               <div class="green-bg-brdr position-absolute"></div>
             <div class="container">
@@ -122,8 +113,8 @@ function loadHTML(page,element) {
   </div>
   
   <div class="inner-content-bg">
-        <div class="container">
-        	<div class="col-lg-12" id="ecotech-imagecontainer">
+    <div class="container">
+      <div class="col-lg-12" id="ecotech-imagecontainer">
             <div id="ecotech-popup" class="ecotech-popup">
               <div class="ecotech-popup-content">
                   <span id="ecotech-closePopup" class="ecotech-close">&times;</span>
@@ -136,624 +127,848 @@ function loadHTML(page,element) {
                   </ul>
                   </div>  
               </div>
+            </div>
+            <div id="ecotech-popup2" class="ecotech-popup">
+              <div class="ecotech-popup-content">
+                  <span class="ecotech-close">&times;</span>
+                  <video width="100%" height="360" class="img-responsive ecotech-popup-video-trigger" controls autoplay>
+                   <source src="" type="video/mp4">
+                  </video>
+                  <div class="popup-dimensions">
+                  <h3>Control Valve Seat Ring</h3>
+                  <ul>
+                    <li><span>Material </span><span>Ferrous</span></li>
+                    <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                  </ul>
+                  </div>  
+              </div>
           </div>
-        		<h1 class="m-3">Products</h1>
-                <!-- <div class="uline"></div> -->
-
-                <div class="material-design"><span>Material we are Handling</span> <br/>
-                  <span>Round bar & Forging:</span> A105, LF2, LF3, F51, F55, 410, F6A, 304, 304L, 316, 316L, INCONEL 625, INCONEL 718 & HASTALLOY.<br/>
-                    <span>Steel Castings:</span> WCB/WCC, LCB/LCC, WC6, WC9, CF8, CF8M, CF3, CF3M, 4A, 6A.</div>
-                    <h4>Steelcastings :</h4>
-                <div class="prod_cont">
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+        <div class="col-lg-12" id="ecotech-imagecontainer">
+            <h1 class="m-3">Products</h1>
+            <div class="material-design"><span>Material we are Handling</span>
+                <br><span>Round bar &amp; Forging:</span> A105, LF2, LF3, F51, F55, 410, F6A, 304, 304L, 316, 316L, INCONEL 625, INCONEL 718 &amp; HASTALLOY.
+                <br><span>Steel Castings:</span> WCB/WCC, LCB/LCC, WC6, WC9, CF8, CF8M, CF3, CF3M, 4A, 6A.</div>
+            <h4>Steelcastings :</h4>
+            <div class="prod_cont">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (1).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (2).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (3).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (4).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (5).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (6).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (7).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (8).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (9).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (10).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (11).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (12).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (13).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (14).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (15).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (16).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (17).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (18).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (19).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (20).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (21).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (22).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (23).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (24).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (25).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (26).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (27).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (28).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (29).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (30).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">SHIELD AND FIXTURE</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (31).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (32).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">YOKE</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (33).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">YOKE</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (34).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">YOKE</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (35).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">DISC</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (36).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">COVER</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="prod_cont_inner">
-                          <div><img src="images/steelcastings/steelcastings (37).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/steelcastings/steelcastings%20(2).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
                 </div>
-
-
-                <h4>Investment Castings:</h4>
-                <div class="prod_cont">
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/investment/investment (1).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BLOWDOWN RING</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 2" src="images/steelcastings/steelcastings%20(3).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/investment/investment (2).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BODY</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 3" src="images/steelcastings/steelcastings%20(4).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/investment/investment (4).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">CAP</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 4" src="images/steelcastings/steelcastings%20(5).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/investment/investment (5).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">DISC</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                 
-                  
-           </div>
-
-           <h4>Roundbars :</h4>
-                <div class="prod_cont">
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 5" src="images/steelcastings/steelcastings%20(6).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (1).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">STEMS</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 6" src="images/steelcastings/steelcastings%20(7).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (2).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">STEMS</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 7" src="images/steelcastings/steelcastings%20(8).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (3).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">SPRING WASHER</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 8" src="images/steelcastings/steelcastings%20(9).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (4).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">SPRING ADJUDTING SCREW</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 9" src="images/steelcastings/steelcastings%20(10).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (5).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">SPRING ADJUSTING SCREW</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 10" src="images/steelcastings/steelcastings%20(11).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (6).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">PULLING TOOL</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 11" src="images/steelcastings/steelcastings%20(12).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (7).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">POSITION INDICATOR</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 12" src="images/steelcastings/steelcastings%20(13).jpeg"></div>
+                        <div class="product-heads">BODY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (8).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">PLUG</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 13" src="images/steelcastings/steelcastings%20(14).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (9).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">PLUG FILTER</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 14" src="images/steelcastings/steelcastings%20(15).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (10).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">LOWER CUP</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 15" src="images/steelcastings/steelcastings%20(16).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (11).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">LOCK NUT</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 16" src="images/steelcastings/steelcastings%20(17).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (12).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">GUIDE COVER</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 17" src="images/steelcastings/steelcastings%20(18).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (13).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">GLAND</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 18" src="images/steelcastings/steelcastings%20(19).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (14).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                            <div class="product-heads">GLAND RING</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 19" src="images/steelcastings/steelcastings%20(20).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (15).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">CAP</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 20" src="images/steelcastings/steelcastings%20(21).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (17).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                            <div class="product-heads">CAP PLUG</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 21" src="images/steelcastings/steelcastings%20(22).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (18).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">CAM</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 22" src="images/steelcastings/steelcastings%20(23).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (19).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">CAM ASSEMBLY</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 23" src="images/steelcastings/steelcastings%20(24).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (20).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                          <div class="product-heads">BODY FILTER</div>
-                          <div class="view-more">View more</div>  
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 24" src="images/steelcastings/steelcastings%20(25).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (21).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BACK SEAT</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 25" src="images/steelcastings/steelcastings%20(26).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (22).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">BACK SEAT</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 26" src="images/steelcastings/steelcastings%20(27).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (23).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">ADJUSTING RING SCREW</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 27" src="images/steelcastings/steelcastings%20(28).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+            </div>
+            <h4>Investment Castings:</h4>
+            <div class="prod_cont">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (24).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads"> </div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/investment/investment%20(2).jpeg"></div>
+                        <div class="product-heads">DISC</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (25).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                            <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 2" src="images/investment/investment%20(3).jpeg"></div>
+                        <div class="product-heads">BLOWDOWN RING</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (26).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                            <div class="product-heads">GLAND FLANGE</div>
-                          <div class="view-more">View more</div>
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 3" src="images/investment/investment%20(4).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (27).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">NPT PLUG</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 4" src="images/investment/investment%20(5).jpeg"></div>
+                        <div class="product-heads">CAP</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+            </div>
+            <h4>Roundbars :</h4>
+            <div class="prod_cont">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                          <div><img src="images/roundbar/roundbar (28).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                           <div class="product-heads">Control Valve Seat Ring</div>
-                          <div class="view-more">View more</div> 
-                      </div>
-                  </div>
-                  
-           </div>
-
-           <h4>Forgings</h4>
-                <div class="prod_cont">
-                    <div  class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="prod_cont_inner">
-                              <div><img src="images/forgings/forgings (1).jpg" class="img-responsive ecotech-popup-trigger"></div>
-                             <div class="product-heads">BONNET</div>
-                          <div class="view-more">View more</div>   
-                          </div>
-                      </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/roundbar/roundbar%20(2).jpeg"></div>
+                        <div class="product-heads">STEMS</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 2" src="images/roundbar/roundbar%20(3).jpeg"></div>
+                        <div class="product-heads">STEMS</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 3" src="images/roundbar/roundbar%20(4).jpeg"></div>
+                        <div class="product-heads">SPRING WASHER</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 4" src="images/roundbar/roundbar%20(5).jpeg"></div>
+                        <div class="product-heads">SPRING ADJUDTING SCREW</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 5" src="images/roundbar/roundbar%20(6).jpeg"></div>
+                        <div class="product-heads">SPRING ADJUSTING SCREW</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 6" src="images/roundbar/roundbar%20(7).jpeg"></div>
+                        <div class="product-heads">PULLING TOOL</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 7" src="images/roundbar/roundbar%20(8).jpeg"></div>
+                        <div class="product-heads">POSITION INDICATOR</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 8" src="images/roundbar/roundbar%20(9).jpeg"></div>
+                        <div class="product-heads">PLUG</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 9" src="images/roundbar/roundbar%20(10).jpeg"></div>
+                        <div class="product-heads">PLUG FILTER</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 10" src="images/roundbar/roundbar%20(11).jpeg"></div>
+                        <div class="product-heads">LOWER CUP</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 11" src="images/roundbar/roundbar%20(12).jpeg"></div>
+                        <div class="product-heads">LOCK NUT</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 12" src="images/roundbar/roundbar%20(13).jpeg"></div>
+                        <div class="product-heads">GUIDE COVER</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 13" src="images/roundbar/roundbar%20(14).jpeg"></div>
+                        <div class="product-heads">GLAND</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 14" src="images/roundbar/roundbar%20(15).jpeg"></div>
+                        <div class="product-heads">GLAND RING</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 15" src="images/roundbar/roundbar%20(16).jpeg"></div>
+                        <div class="product-heads">CAP</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 16" src="images/roundbar/roundbar%20(17).jpeg"></div>
+                        <div class="product-heads">CAP PLUG</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 17" src="images/roundbar/roundbar%20(18).jpeg"></div>
+                        <div class="product-heads">CAM</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 18" src="images/roundbar/roundbar%20(19).jpeg"></div>
+                        <div class="product-heads">CAM ASSEMBLY</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 19" src="images/roundbar/roundbar%20(20).jpeg"></div>
+                        <div class="product-heads">BODY FILTER</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 20" src="images/roundbar/roundbar%20(21).jpeg"></div>
+                        <div class="product-heads">BACK SEAT</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 21" src="images/roundbar/roundbar%20(22).jpeg"></div>
+                        <div class="product-heads">BACK SEAT</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 22" src="images/roundbar/roundbar%20(23).jpeg"></div>
+                        <div class="product-heads">ADJUSTING RING SCREW</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 23" src="images/roundbar/roundbar%20(24).jpeg"></div>
+                        <div class="product-heads">BONNET</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 24" src="images/roundbar/roundbar%20(25).jpeg"></div>
+                        <div class="product-heads">GLAND FLANGE</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 25" src="images/roundbar/roundbar%20(26).jpeg"></div>
+                        <div class="product-heads">NPT PLUG</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 26" src="images/roundbar/roundbar%20(27).jpeg"></div>
+                        <div class="product-heads"></div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 27" src="images/roundbar/roundbar%20(28).jpeg"></div>
+                        <div class="product-heads"></div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+            </div>
+            <h4>Forgings</h4>
+            <div class="prod_cont">
+                    
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (2).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                <div class="product-heads">CAM</div>
                           <div class="view-more">View more</div> 
                           </div>
                       </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (3).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                 <div class="product-heads">PLANGE</div>
                           <div class="view-more">View more</div>
                           </div>
                       </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (4).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                <div class="product-heads">GLAND PLANGE</div>
                           <div class="view-more">View more</div> 
                           </div>
                       </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (5).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                 <div class="product-heads">GUIDE</div>
                           <div class="view-more">View more</div>
                           </div>
                       </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (6).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                <div class="product-heads">TOP COVER</div>
                           <div class="view-more">View more</div> 
                           </div>
                       </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (7).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                <div class="product-heads">YOKE BONNET</div>
                           <div class="view-more">View more</div> 
                           </div>
                       </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (8).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                <div class="product-heads">BODY</div>
                           <div class="view-more">View more</div> 
                           </div>
                       </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="prod_cont_inner">
                               <div><img src="images/forgings/forgings (9).jpg" class="img-responsive ecotech-popup-trigger"></div>
                                 <div class="product-heads">BODY</div>
                           <div class="view-more">View more</div>
                           </div>
                       </div>  
+                      <div class="col-lg-3 col-md-6 col-xs-12">
+    <div class="prod_cont_inner">
+        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 9" src="images/forgings/forgings (10).jpg"></div>
+        <div class="product-heads"></div>
+        <ul class="ecotech-hidden-details-1">
+            <li><span>Material </span><span>Ferrous</span></li>
+            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+        </ul>
+        <div class="view-more">View more</div>
+    </div>
+</div>
                       </div>
-
-                  <h4>Fabrication :</h4>
-                <div class="prod_cont">
-                    <div  class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="prod_cont_inner">
-                              <div><img src="images/fabrication/fabrication (1).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                               <div class="product-heads">HAND LEAVER</div>
-                          <div class="view-more">View more</div>
-                          </div>
-                      </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="prod_cont_inner">
-                              <div><img src="images/fabrication/fabrication (2).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                               <div class="product-heads">LIFTING LUG</div>
-                          <div class="view-more">View more</div> 
-                          </div>
-                      </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="prod_cont_inner">
-                              <div><img src="images/fabrication/fabrication (3).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                               <div class="product-heads">SUPPORT</div>
-                          <div class="view-more">View more</div> 
-                          </div>
-                      </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="prod_cont_inner">
-                              <div><img src="images/fabrication/fabrication (4).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                                <div class="product-heads">WEATHER HOOD</div>
-                          <div class="view-more">View more</div>
-                          </div>
-                      </div>                       
+            <h4>Fabrication :</h4>
+            <div class="prod_cont">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/fabrication/fabrication%20(2).jpeg"></div>
+                        <div class="product-heads">HAND LEAVER</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
                 </div>
-                <h4>Gearbox :</h4>
-                <div class="prod_cont">
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="prod_cont_inner">
-                              <div><img src="images/gearbox/gearbox (1).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                               <div class="product-heads">TYPE M</div>
-                          <div class="view-more">View more</div> 
-                          </div>
-                      </div>
-                      <div  class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="prod_cont_inner">
-                              <div><img src="images/gearbox/gearbox (2).jpeg" class="img-responsive ecotech-popup-trigger"></div>
-                               <div class="product-heads">TYPE B</div>
-                          <div class="view-more">View more</div> 
-                          </div>
-                      </div>                     
-                      
-                      </div>
-             </div>  
-
-  </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 2" src="images/fabrication/fabrication%20(3).jpeg"></div>
+                        <div class="product-heads">LIFTING LUG</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 3" src="images/fabrication/fabrication%20(4).jpeg"></div>
+                        <div class="product-heads">SUPPORT</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 4" src="images/fabrication/fabrication%20(5).jpeg"></div>
+                        <div class="product-heads">WEATHER HOOD</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+            </div>
+            <h4>Gearbox :</h4>
+            <div class="prod_cont">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/gearbox/gearbox%20(1).jpeg"></div>
+                        <div class="product-heads">TYPE M</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 2" src="images/gearbox/gearbox%20(2).jpeg"></div>
+                        <div class="product-heads">TYPE V</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+            </div>
+            <h4>Others :</h4>
+            <div class="prod_cont other-contant">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div>
+                            <video width="640" height="360" class="img-responsive ecotech-popup-trigger2">
+                                <source src="images/Others/other-2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="product-heads">Wiremesh Welding(316)</div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="prod_cont_inner">
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/Others/other-img2.jpg"></div>
+                        <div class="product-heads"></div>
+                        <ul class="ecotech-hidden-details-1">
+                            <li><span>Material </span><span>Ferrous</span></li>
+                            <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
+                        </ul>
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
        
       </div>
@@ -804,8 +1019,7 @@ function loadHTML(page,element) {
         <br>
         <div class="copyright">
           <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
-            <p>&copy; Copyright 2024 ECOTECH CASTINGS INDIA PVT. LTD . All rights reserved.</p>
-            </p>
+            <p>&copy; Copyright 2024 ECOTECH CASTINGS INDIA PVT. LTD . All rights reserved.</p>            
           </div>
           
         </div>
@@ -872,22 +1086,23 @@ function updatePosition() {
     const element = document.querySelector("#greenbg-id").getBoundingClientRect();
         $('.green-bg-brdr').css({'left':element.left})
 }
-  $('.ecotech-popup-enquiry').on('click', function() {
-          $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeIn();
-      });
-      $('#ecotech-closeenquiry').on('click', function() {
-        $('#ecotech-enquiry,#ecotech-enquiry-overlay').fadeOut();
-      });
   $(document).ready(function() {
       $(document).on('click', '.ecotech-popup-trigger', function() {
-    var imgSrc = $(this).attr('src');
+        let imgSrc = $(this).attr('src');
           $('#ecotech-popupImage').attr('src', imgSrc);
           $('#ecotech-popup').fadeIn();
   });
+     $(document).on('click', '.ecotech-popup-trigger2', function() {
+        let imgSrc = $(this).find('source').attr('src');
+          $('.ecotech-popup-video-trigger').attr('src', imgSrc);
+          $('#ecotech-popup2').fadeIn();
+  });
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('ecotech-close')) {
-          $('#ecotech-popup').fadeOut();
-  }
+          $(this).next().find('source').attr('src', '');
+            $('#ecotech-popup').fadeOut();
+            $('#ecotech-popup2').fadeOut();
+        }
 });
       // $('').on('click', function() {
       //     $('#ecotech-popup').fadeOut();
