@@ -168,7 +168,9 @@ body {
   left: 0px;
   top: 0px;
 }
-
+.footer *:last-child {
+    margin-bottom: 0 !important;
+}
 .enquiry-btn button,
 .enquiry-btn button:hover {
   background: #281370;
