@@ -137,7 +137,7 @@ function loadHTML(page,element) {
             <div id="ecotech-popup2" class="ecotech-popup">
               <div class="ecotech-popup-content">
                   <span class="ecotech-close">&times;</span>
-                  <video width="100%" height="360" class="img-responsive ecotech-popup-video-trigger" controls autoplay>
+                  <video width="100%" height="360" class="img-responsive ecotech-popup-video-trigger" controls autoplay id="video-temp">
                    <source src="" type="video/mp4">
                   </video>
                   <div class="popup-dimensions">
@@ -945,14 +945,10 @@ function loadHTML(page,element) {
                 </div>
             </div>
             <h4>Others :</h4>
-            <div class="prod_cont other-contant">
+            <div class="prod_cont other-contant">               
                 <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                        <div>
-                            <video width="640" height="360" class="img-responsive ecotech-popup-trigger2">
-                                <source src="images/Others/other-2.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/Others/other-img2.jpg"></div>
                         <div class="product-heads">Wiremesh Welding(316)</div>
                         <ul class="ecotech-hidden-details-1">
                             <li><span>Material </span><span>Ferrous</span></li>
@@ -961,10 +957,14 @@ function loadHTML(page,element) {
                         <div class="view-more">View more</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-xs-12">
+                 <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="prod_cont_inner">
-                        <div><img class="img-responsive ecotech-popup-trigger" alt="Product 1" src="images/Others/other-img2.jpg"></div>
-                        <div class="product-heads"></div>
+                        <div>
+                            <video width="640" height="360" class="img-responsive ecotech-popup-trigger2">
+                                <source src="images/Others/other-2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="product-heads">Wiremesh Welding(316)</div>
                         <ul class="ecotech-hidden-details-1">
                             <li><span>Material </span><span>Ferrous</span></li>
                             <li><span>Dimension (upto) inch</span><span>1/2" - 30"</span></li>
@@ -1104,8 +1104,10 @@ function updatePosition() {
           $('#ecotech-popup2').fadeIn();
   });
 document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('ecotech-close')) {
-          $(this).next().find('source').attr('src', '');
+  if (event.target.classList.contains('ecotech-close')) {                    
+            let video = $('#video-temp').get(0);
+            video.pause();                     // stop video
+            video.currentTime = 0;  
             $('#ecotech-popup').fadeOut();
             $('#ecotech-popup2').fadeOut();
         }
