@@ -105,7 +105,10 @@ body {
   /* Black background with opacity */
   transition: display 2s;
 }
-
+.view-more-link-produts {
+  text-decoration: none;
+  color: #333;
+}
 .view-more-btn {
   width: 86px;
   text-align: center;
@@ -173,7 +176,7 @@ body {
 }
 
 .ecotech-popup-trigger,
-.ecotech-popup-enquiry {
+.ecotech-popup-enquiry, .ecotech-popup-trigger2 {
   cursor: pointer
 }
 
