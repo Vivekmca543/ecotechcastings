@@ -528,13 +528,13 @@ header {
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  
 }
 
 .socialmedia li a:hover {
   background: #d25a17;
   color: #fff !important;
 }
-
 .ph-mail {
   color: #fff;
 }
@@ -2400,6 +2400,9 @@ select option[val="2"] {
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socialmedia li a:hover {
