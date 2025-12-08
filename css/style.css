@@ -33,7 +33,10 @@ body {
 .inner-content-bg .uline {
   width: 18%;
 }
-.w-87{width:calc(100% - 60px);}
+.w-87{width:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+}
 .ecotech-whatapp {
   width: 40px;
   height: 40px;
