@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     $errorMsg = "Invalid email format.";
     // } else {
         // Prepare email
-        $to = "vivekmca543@gmail.com";
+        $to = "info@ecotechcastings.in";
         $subject = "Enquire Form from $name";
         $body = "
             <html>
